@@ -24,6 +24,7 @@ namespace Еxercises
             List<object> objectsArray = new List<object>();
             objectsArray.Add(ushortVariable);
             objectsArray.Add(sbyteVaribale);
+            //Just a simple change to test PRs in github
 
             foreach (var item in objectsArray)
             {
