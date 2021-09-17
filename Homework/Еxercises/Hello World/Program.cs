@@ -2,14 +2,20 @@
 
 namespace Hello_World
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            string a = "HEllo";
+            HelloWorld();
+        }
+
+        public static string HelloWorld()
+        {
+            string a = "Hello";
             string b = "World";
             object c = a + " " + b;
             string d = c.ToString();
+            return d;
         }
     }
 }

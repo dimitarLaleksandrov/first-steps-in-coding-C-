@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataSave", "DataSave\DataSa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "int", "int\int.csproj", "{0E9655B3-7FDB-4AC7-A87E-CB83F5470AEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloatingPoint", "FloatingPoint\FloatingPoint.csproj", "{F4D7095E-F304-44CC-B9CA-28279E09F188}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FloatingPoint", "FloatingPoint\FloatingPoint.csproj", "{F4D7095E-F304-44CC-B9CA-28279E09F188}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{AA68065B-4337-43E5-8639-C7A6A93D9C20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{F4D7095E-F304-44CC-B9CA-28279E09F188}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4D7095E-F304-44CC-B9CA-28279E09F188}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4D7095E-F304-44CC-B9CA-28279E09F188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA68065B-4337-43E5-8639-C7A6A93D9C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA68065B-4337-43E5-8639-C7A6A93D9C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA68065B-4337-43E5-8639-C7A6A93D9C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA68065B-4337-43E5-8639-C7A6A93D9C20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
