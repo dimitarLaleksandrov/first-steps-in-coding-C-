@@ -54,7 +54,6 @@ namespace _05._Small_Shop
                     price = quantity * 1.55;
             }
             Console.WriteLine(price);
-
         }
     }
 }
