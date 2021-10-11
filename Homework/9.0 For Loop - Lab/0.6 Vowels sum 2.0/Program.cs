@@ -11,26 +11,23 @@ namespace _0._6_Vowels_sum_2._0
             for (int i = 0; i < text.Length; i++)
             {
                 char letter = text[i];
-                if (letter == 'a')
+                switch (letter)
                 {
-
+                    case 'a':
                     num += 1;
-                }
-                else if (letter == 'e')
-                {
+                        break;
+                    case 'e':
                     num += 2;
-                }
-                else if (letter == 'i')
-                {
+                        break;
+                    case 'i':
                     num += 3;
-                }
-                else if (letter == 'o')
-                {
+                        break;
+                    case 'o':
                     num += 4;
-                }
-                else if (letter == 'u')
-                {
+                        break;
+                    case 'u':
                     num += 5;
+                        break;
                 }
             }
             Console.WriteLine(num);
