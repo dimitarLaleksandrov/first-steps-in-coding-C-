@@ -9,8 +9,9 @@ namespace _12._Trade_Commissions
             string city = Console.ReadLine();
             double sales = double.Parse(Console.ReadLine());
             double percentage = 0;
-            if (city == "Sofia")
+            switch (city)
             {
+                case "Sofia":
                 if (sales >= 0 && sales <= 500)
                 {
                     percentage = sales * 0.05;
@@ -31,9 +32,8 @@ namespace _12._Trade_Commissions
                 {
                     Console.WriteLine("error");
                 }
-            }
-            else if (city == "Varna")
-            {
+                    break;
+                case "Varna":
                 if (sales >= 0 && sales <= 500)
                 {
                     percentage = sales * 0.045;
@@ -54,9 +54,9 @@ namespace _12._Trade_Commissions
                 {
                     Console.WriteLine("error");
                 }
-            }
-            else if(city == "Plovdiv")
-            {
+                    break;
+                case "Plovdiv":
+           
                 if (sales >= 0 && sales <= 500)
                 {
                     percentage = sales * 0.055;
@@ -77,11 +77,11 @@ namespace _12._Trade_Commissions
                 {
                     Console.WriteLine("error");
                 }
+                    break;
+                default:
+                    break;
             }
-            else
-            {
-                Console.WriteLine("error");
-            }
+          
             if(percentage != 0)
             {
                 Console.WriteLine($"{percentage:f2}");

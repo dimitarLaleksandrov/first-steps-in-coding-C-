@@ -7,17 +7,23 @@ namespace _08.Cinema_Ticket
         static void Main(string[] args)
         {
             string day = Console.ReadLine();
-            if(day == "Monday" || day == "Tuesday" || day == "Friday")
+            switch (day)
             {
-                Console.WriteLine(12);
-            }
-            if(day == "Wednesday" || day == "Thursday")
-            {
-                Console.WriteLine(14);
-            }
-            if(day == "Saturday" || day == "Sunday")
-            {
-                Console.WriteLine(16);
+                case "Monday":
+                case "Tuesday":
+                case "Friday":
+                    Console.WriteLine(12);
+                    break;
+                case "Wednesday":
+                case "Thursday":
+                    Console.WriteLine(14);
+                    break;
+                case "Saturday":
+                case "Sunday":
+                    Console.WriteLine(16);
+                    break;
+                default:
+                    break;
             }
         }
     }

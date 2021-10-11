@@ -8,19 +8,19 @@ namespace _04._Personal_Titles
         {
             double age = double.Parse(Console.ReadLine());
             string gender = Console.ReadLine();
-            if(gender == "m")
+            switch(gender)
             {
-                if(age >= 16)
-                {
-                    Console.WriteLine("Mr.");
-                }
-                else if(age < 16)
-                {
-                    Console.WriteLine("Master");
-                }
-            }
-            if(gender == "f")
-            {
+                case "m":
+                    if (age >= 16)
+                    {
+                        Console.WriteLine("Mr.");
+                    }
+                    else if (age < 16)
+                    {
+                        Console.WriteLine("Master");
+                    }
+                    break;
+                case "f":
                 if(age >= 16)
                 {
                     Console.WriteLine("Ms.");
@@ -29,6 +29,9 @@ namespace _04._Personal_Titles
                 {
                     Console.WriteLine("Miss");
                 }
+                    break;
+                default:
+                    break;
             }
         }
     }
