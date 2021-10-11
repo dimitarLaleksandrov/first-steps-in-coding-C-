@@ -9,18 +9,20 @@ namespace _01._Cinema
             string projection = Console.ReadLine();
             int rows = int.Parse(Console.ReadLine());
             int colums = int.Parse(Console.ReadLine());
-            double price = 0.0;
-            if(projection == "Premiere")
+            decimal price = 0;
+            switch (projection)
             {
-                price = (colums * rows) * 12.00;
-            }
-            else if(projection == "Normal")
-            {
-                price = (colums * rows) * 7.50;
-            }
-            else if(projection == "Discount")
-            {
-                price = (colums * rows) * 5.00;
+                case "Premiere":
+                    price = (rows * colums) * 12m;
+                    break;
+                case "Normal":
+                    price = (rows * colums) * 7.50m;
+                    break;
+                case "Discount":
+                    price = (rows * colums) * 5m;
+                    break;
+                default:
+                    break;
             }
             Console.WriteLine($"{price:f2} leva");
         }

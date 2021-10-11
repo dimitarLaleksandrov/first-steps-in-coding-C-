@@ -10,8 +10,9 @@ namespace _06._Operations_Between_Numbers
             double nTwo = double.Parse(Console.ReadLine());
             string simbol = Console.ReadLine();
             double resolt = 0.00;
-            if (simbol == "+")
+           switch (simbol)
             {
+                case " + ":
                 resolt = nOne + nTwo;
                 if (resolt % 2 == 0)
                 {
@@ -21,9 +22,8 @@ namespace _06._Operations_Between_Numbers
                 {
                     Console.WriteLine($"{nOne} + {nTwo} = {resolt} - odd");
                 }
-            }
-            else if (simbol == "-")
-            {
+                    break;
+                case "-":
                 resolt = nOne - nTwo;
                 if (resolt % 2 == 0)
                 {
@@ -33,9 +33,8 @@ namespace _06._Operations_Between_Numbers
                 {
                     Console.WriteLine($"{nOne} - {nTwo} = {resolt} - odd");
                 }
-            }
-            else if (simbol == "*")
-            {
+                    break;
+                case "*":
                 resolt = nOne * nTwo;
                 if (resolt % 2 == 0)
                 {
@@ -45,9 +44,8 @@ namespace _06._Operations_Between_Numbers
                 {
                     Console.WriteLine($"{nOne} * {nTwo} = {resolt} - odd");
                 }
-            }
-            else if (simbol == "/")
-            {
+                    break;
+                case "/":
                 resolt = nOne / nTwo;
                 if (nOne == 0)
                 {
@@ -61,9 +59,8 @@ namespace _06._Operations_Between_Numbers
                 {
                     Console.WriteLine($"{nOne} / {nTwo} = {resolt:f2}");
                 }
-            }
-            else if (simbol == "%")
-            {
+                    break;
+                case "%":
                 resolt = nOne % nTwo;
                 if (nOne == 0)
                 {
@@ -77,6 +74,9 @@ namespace _06._Operations_Between_Numbers
                 {
                     Console.WriteLine($"{nOne} % {nTwo} = {resolt}");
                 }
+                    break;
+                default:
+                    break;
             }
         }
     }

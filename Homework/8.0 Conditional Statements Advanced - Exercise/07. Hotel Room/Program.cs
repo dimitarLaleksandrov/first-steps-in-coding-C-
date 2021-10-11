@@ -12,8 +12,10 @@ namespace _07._Hotel_Room
             double studio = 0.0;
             double wholeStayS = 0.0;
             double wholeStayA = 0.0;
-            if(month == "May" || month == "October")
+            switch (month)
             {
+                 case "May":
+                 case "October":
                 apartment = 65.0;
                 studio = 50.0;
                 if(days > 7 && days <= 14)
@@ -29,9 +31,9 @@ namespace _07._Hotel_Room
                 wholeStayA = apartment * days;
                 Console.WriteLine($"Apartment: {wholeStayA:f2} lv.");
                 Console.WriteLine($"Studio: {wholeStayS:f2} lv.");
-            }
-            if (month == "June" || month == "September")
-            {
+                    break;
+                case "June":
+                case "September":
                 apartment = 68.70;
                 studio = 75.20;
                 if (days > 14)
@@ -43,9 +45,9 @@ namespace _07._Hotel_Room
                 wholeStayA = apartment * days;
                 Console.WriteLine($"Apartment: {wholeStayA:f2} lv.");
                 Console.WriteLine($"Studio: {wholeStayS:f2} lv.");
-            }
-            if (month == "July" || month == "August")
-            {
+                    break;
+                case "July":
+                case "August":
                 apartment = 77.0;
                 studio = 76.0;
                 if (days > 14)
@@ -56,6 +58,9 @@ namespace _07._Hotel_Room
                 wholeStayA = apartment * days;
                 Console.WriteLine($"Apartment: {wholeStayA:f2} lv.");
                 Console.WriteLine($"Studio: {wholeStayS:f2} lv.");
+                    break;
+                default:
+                    break;
             }
         }
     }

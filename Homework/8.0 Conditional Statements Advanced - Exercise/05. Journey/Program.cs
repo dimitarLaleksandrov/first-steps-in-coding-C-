@@ -14,38 +14,49 @@ namespace _05._Journey
             if(budget <= 100)
             {
                 destination = "Bulgaria";
-                if(season == "summer")
+                switch (season)
                 {
-                    spend = budget * 0.30;
-                    stayIn = "Camp";
-                }
-                else if(season == "winter")
-                {
-                    spend = budget * 0.70;
-                    stayIn = "Hotel";
+                    case "summer":
+                        spend = budget * 0.30;
+                        stayIn = "Camp";
+                        break;
+                    case "winter":
+                        spend = budget * 0.70;
+                        stayIn = "Hotel";
+                        break;
+                    default:
+                        break;
                 }
             }
             else if(budget <= 1000)
             {
                 destination = "Balkans";
-                if(season == "summer")
+                switch (season)
                 {
-                    spend = budget * 0.40;
-                    stayIn = "Camp";
-                }
-                else if(season == "winter")
-                {
-                    spend = budget * 0.80;
-                    stayIn = "Hotel";
+                    case "summer":
+                        spend = budget * 0.40;
+                        stayIn = "Camp";
+                        break;
+                    case "winter":
+                        spend = budget * 0.80;
+                        stayIn = "Hotel";
+                        break;
+                    default:
+                        break;
                 }
             }
             else if(budget > 1000)
             {
                 destination = "Europe";
-                if(season == "winter" || season == "summer")
+                switch (season)
                 {
+                    case "winter":
+                    case "summer":
                     spend = budget * 0.90;
                     stayIn = "Hotel";
+                        break;
+                    default:
+                        break;
                 }
             }
             Console.WriteLine($"Somewhere in {destination}");

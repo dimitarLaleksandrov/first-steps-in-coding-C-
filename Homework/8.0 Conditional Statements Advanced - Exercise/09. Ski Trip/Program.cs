@@ -6,89 +6,104 @@ namespace _09._Ski_Trip
     {
         static void Main(string[] args)
         {
-            double onePerson = 18.00;
-            double apartment = 25.00;
-            double presidentA = 35.00;
+            decimal onePerson = 18;
+            decimal apartment = 25;
+            decimal presidentA = 35;
             int days = int.Parse(Console.ReadLine());
             string room = Console.ReadLine();
             string rating = Console.ReadLine();
-            double prise = 0.0;
-            if(days < 10)
+            decimal prise = 0;
+            if (days < 10)
             {
-                if(room == "room for one person")
+                switch (room)
                 {
-                    onePerson = 18.00;
-                    prise = (days -1) * onePerson;
-                }
-                else if(room == "apartment")
-                {
-                    apartment -= apartment * 0.30;
-                    prise = (days - 1) * apartment;
-                }
-                else if(room == "president apartment")
-                {
-                    presidentA -= presidentA * 0.10;
-                    prise = (days -1) * presidentA;
-                }
-                if (rating == "positive")
-                {
-                    prise += prise * 0.25;
-                }
-                else if (rating == "negative")
-                {
-                    prise -= prise * 0.10;
+                    case "room for one person":
+                        onePerson = 18;
+                        prise = (days - 1) * onePerson;
+                        break;
+                    case "apartment":
+                        apartment -= (apartment * 0.30m);
+                        prise = (days - 1) * apartment;
+                        break;
+                    case "president apartment":
+                        presidentA -= presidentA * 0.10m;
+                        prise = (days - 1) * presidentA;
+                        break;
+                    default:
+                        break;
+                        switch (rating)
+                        {
+                            case "positive":
+                                prise += prise * 0.25m;
+                                break;
+                            case "negative":
+                                prise -= prise * 0.10m;
+                                break;
+                            default:
+                                break;
+                        }
                 }
             }
-            else if(days >= 10 && days <= 15)
+            else if (days >= 10 && days <= 15)
             {
-                if (room == "room for one person")
+                switch (room)
                 {
-                    onePerson = 18.00;
-                    prise = (days - 1) * onePerson;
-                }
-                else if (room == "apartment")
-                {
-                    apartment -= apartment * 0.35;
-                    prise = (days - 1) * apartment;
-                }
-                else if (room == "president apartment")
-                {
-                    presidentA -= presidentA * 0.15;
-                    prise = (days - 1) * presidentA;
-                }
-                if (rating == "positive")
-                {
-                    prise += prise * 0.25;
-                }
-                else if (rating == "negative")
-                {
-                    prise -= prise * 0.10;
+                    case "room for one person":
+                        onePerson = 18.00m;
+                        prise = (days - 1) * onePerson;
+                        break;
+                    case "apartment":
+                        apartment -= apartment * 0.35m;
+                        prise = (days - 1) * apartment;
+                        break;
+                    case "president apartment":
+                        presidentA -= presidentA * 0.15m;
+                        prise = (days - 1) * presidentA;
+                        break;
+                    default:
+                        break;
+                        switch (rating)
+                        {
+                            case "positive":
+                                prise += prise * 0.25m;
+                                break;
+                            case "negative":
+                                prise -= prise * 0.10m;
+                                break;
+                            default:
+                                break;
+                        }
                 }
             }
-            else if(days > 15)
+            else if (days > 15)
             {
-                if (room == "room for one person")
-                {
-                    onePerson = 18.00;
+                switch (room)
+                { 
+                    case "room for one person":
+                    onePerson = 18;
                     prise = (days - 1) * onePerson;
-                }
-                else if (room == "apartment")
-                {
-                    apartment -= apartment * 0.50;
+                    break;
+                    case "apartment":
+                        apartment -= (apartment * 0.50m);
                     prise = (days - 1) * apartment;
-                }
-                else if (room == "president apartment")
-                {
-                    presidentA -= presidentA * 0.20;
-                    prise = (days - 1) * presidentA;
-                }
-                if (rating == "positive")
-                {
-                    prise += prise * 0.25;
-                }
-                else if(rating == "negative")
-                {
-                    prise -= prise * 0.10;
+                    break;
+                    case "president apartment":
+                        presidentA -= presidentA * 0.20m;
+                        prise = (days - 1) * presidentA;
+                      break;
+                        default:
+                        break;
+                      switch (rating)
+                      {
+                        case "positive":
+                            prise += prise * 0.25m;
+                            break;
+                        case "negative":
+                            prise -= prise * 0.10m;
+                            break;
+                        default:
+                            break; 
+                       }
                 }
             }
             Console.WriteLine($"{prise:f2}");
