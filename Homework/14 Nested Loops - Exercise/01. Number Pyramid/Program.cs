@@ -7,19 +7,20 @@ namespace _01._Number_Pyramid
         static void Main(string[] args)
         {
             int num = int.Parse(Console.ReadLine());
-            int curentNum = 1;
-            for (int i = 1; i <= num; i++)
+            int counterRow = 1;
+            int counter = 0;
+            for (int i = 1; i <= num ; i++)
             {
-                for (int k = 1; k <= i ; k++)
+                if (i <= num)
                 {
-                    if (curentNum > num)
-                    {
-                        continue;
-                    }
-                    Console.Write($"{curentNum} ");
-                    curentNum++;
+                    Console.WriteLine(i + " ");
+                    counterRow++;
                 }
-                Console.WriteLine();
+                if (true)
+                {
+
+                }
+
             }
         }
     }

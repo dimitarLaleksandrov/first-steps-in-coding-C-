@@ -8,7 +8,7 @@ namespace _03._Time___15_Minutes
         {
             int hours = int.Parse(Console.ReadLine());
             int min = int.Parse(Console.ReadLine());
-            int addMin = min + 15;
+            double addMin = min + 15;
             if(addMin >= 60)
             {
                 addMin -= 60;
@@ -18,7 +18,7 @@ namespace _03._Time___15_Minutes
             {
                 hours = 0;
             }
-            Console.WriteLine($"{hours}:{addMin:d2}");
+            Console.WriteLine($"{hours}:{addMin}");
         }
     }
 }
