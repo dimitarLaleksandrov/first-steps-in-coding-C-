@@ -9,10 +9,12 @@ namespace _3._Calculations
             string command = Console.ReadLine();
             int furstNum = int.Parse(Console.ReadLine());
             int secondNum = int.Parse(Console.ReadLine());
+            int result = 0;
+            
             switch (command)
             {
                 case "add":
-                    Add(furstNum, secondNum);
+                    result = Add(furstNum, secondNum);
                     break;
                 case "multiply":
                     Multiply(furstNum, secondNum);
@@ -26,10 +28,11 @@ namespace _3._Calculations
                 default:
                     break;
             }
-            static void Add( int furstNum, int secondNum)
+            Console.WriteLine(result);
+            static int Add( int furstNum, int secondNum)
             {
-                Console.WriteLine(furstNum + secondNum);
-            }
+                return furstNum + secondNum;
+            } 
             static void Multiply(int furstNum, int secondNum)
             {
                 Console.WriteLine(furstNum * secondNum);
