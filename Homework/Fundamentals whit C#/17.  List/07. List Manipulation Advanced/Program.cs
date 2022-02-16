@@ -8,6 +8,7 @@ namespace _07._List_Manipulation_Advanced
     {
         static void Main(string[] args)
         {
+            Array aff = new[] { 2 };
             List<int> numbers = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList();
             string comand = string.Empty;
             bool haveChainges = false;

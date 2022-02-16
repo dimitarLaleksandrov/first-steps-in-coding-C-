@@ -5,3 +5,5 @@
   Software-Development-Concepts-Part-2     https://youtu.be/Okewi9zCQ78
 
   List      -     https://youtu.be/-rto13LQ0wo
+
+  Exercise : List   -   https://youtu.be/JK_cGh-dKVo
