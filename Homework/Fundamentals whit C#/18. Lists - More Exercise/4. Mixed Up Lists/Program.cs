@@ -26,29 +26,35 @@ namespace _4._Mixed_Up_Lists
                 secondList.RemoveAt(0);
                 secondList.RemoveAt(0);    
             }
+            if (betweenFirstNum > betweenLastNum)
+            {
+                var a = betweenLastNum;
+                betweenLastNum = betweenFirstNum;
+                betweenFirstNum = a;
+            }
             List<int> exitPrint = SortedListForPrinting(firstList, secondList, betweenFirstNum, betweenLastNum);
             Console.WriteLine(string.Join(" ", exitPrint));
         }
         static List<int> SortedListForPrinting(List<int> firstList, List<int> secondList, int betweenFirstNum, int betweenLastNum)
         {
             List<int> mixedList = new List<int>();
-            List<int> lastPrintList = new List<int>();
-            for (int i = 0; i <= (firstList.Count + 2) + (secondList.Count + 2); i++)
+            for (int i = 0; i < firstList.Count; i++)
             {
-                mixedList.Add(firstList[0]);
-                firstList.RemoveAt(0);
-                mixedList.Add(secondList[secondList.Count - 1]);
-                secondList.RemoveAt(secondList.Count - 1);
-            }
-            for (int i = 0; i < mixedList.Count; i++)
-            {
-                if (mixedList[i] > betweenFirstNum && mixedList[i] < betweenLastNum)
+                if (IsInRange(firstList[i], betweenFirstNum, betweenLastNum))
                 {
-                    lastPrintList.Add(mixedList[i]);
+                    mixedList.Add(firstList[i]);
                 }
-                lastPrintList.Sort();
+                if (IsInRange(secondList[i], betweenFirstNum, betweenLastNum))
+                {
+                    mixedList.Add(secondList[i]);
+                }
             }
-            return lastPrintList;
+            mixedList.Sort();
+            return mixedList;
+        }
+        static bool IsInRange(int value, int min, int max)
+        {
+            return value > min && value < max;
         }
     }
 }
