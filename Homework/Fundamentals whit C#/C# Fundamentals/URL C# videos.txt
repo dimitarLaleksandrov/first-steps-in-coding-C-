@@ -14,3 +14,10 @@
 
 
 Objects and Classes  -  https://youtu.be/n2RuyS85BFI
+
+
+Bitwise Operations     -     https://youtu.be/s66aYp7F6Ts
+
+
+
+Associative Arrays     -    https://youtu.be/NN4pHz4gSjY

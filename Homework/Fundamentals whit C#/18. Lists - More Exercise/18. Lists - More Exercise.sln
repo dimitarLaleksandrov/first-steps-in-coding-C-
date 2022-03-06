@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Messaging", "1. Messaging\1. Messaging.csproj", "{CDD60258-C6D4-4564-A3AF-D574709DF07A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Messaging", "1. Messaging\1. Messaging.csproj", "{CDD60258-C6D4-4564-A3AF-D574709DF07A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Car Race", "2. Car Race\2. Car Race.csproj", "{DC614810-A5D5-48A6-90A0-6D01F02C1E78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Car Race", "2. Car Race\2. Car Race.csproj", "{DC614810-A5D5-48A6-90A0-6D01F02C1E78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Take Skip Rope", "3. Take Skip Rope\3. Take Skip Rope.csproj", "{378D2ED4-89F9-40C3-953B-04403106950C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Take Skip Rope", "3. Take Skip Rope\3. Take Skip Rope.csproj", "{378D2ED4-89F9-40C3-953B-04403106950C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. 1 take Skip Rope", "3. 1 take Skip Rope\3. 1 take Skip Rope.csproj", "{8078D63A-2901-4706-AE7E-762E599482AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. 1 take Skip Rope", "3. 1 take Skip Rope\3. 1 take Skip Rope.csproj", "{8078D63A-2901-4706-AE7E-762E599482AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Mixed Up Lists", "4. Mixed Up Lists\4. Mixed Up Lists.csproj", "{AAEF58B0-DBD3-4B67-932C-B0661C03B642}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4. Mixed Up Lists", "4. Mixed Up Lists\4. Mixed Up Lists.csproj", "{AAEF58B0-DBD3-4B67-932C-B0661C03B642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Drum Set", "05. Drum Set\05. Drum Set.csproj", "{A0FA73FE-60F4-4985-BC89-97A7FD3165B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{AAEF58B0-DBD3-4B67-932C-B0661C03B642}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAEF58B0-DBD3-4B67-932C-B0661C03B642}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAEF58B0-DBD3-4B67-932C-B0661C03B642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0FA73FE-60F4-4985-BC89-97A7FD3165B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FA73FE-60F4-4985-BC89-97A7FD3165B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FA73FE-60F4-4985-BC89-97A7FD3165B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FA73FE-60F4-4985-BC89-97A7FD3165B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
