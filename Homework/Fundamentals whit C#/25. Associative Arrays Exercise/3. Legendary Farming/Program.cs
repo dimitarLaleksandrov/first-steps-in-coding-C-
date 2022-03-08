@@ -60,18 +60,32 @@ namespace _3._Legendary_Farming
         }
         static void PrintLegenderiItem (string legenderiItem, Dictionary<string, int> materials)
         {
-            if (legenderiItem == "shards")
+            switch (legenderiItem)
             {
-                Console.WriteLine("Shadowmourne obtained!");
+                case "shards":
+                    Console.WriteLine("Shadowmourne obtained!");
+                    break;
+                case "fragments":
+                    Console.WriteLine("Valanyr obtained!");
+                    break;
+                case "motes":
+                    Console.WriteLine("Dragonwrath obtained!");
+                    break;
+                default:
+                    break;
             }
-            else if (legenderiItem == "fragments")
-            {
-                Console.WriteLine("Valanyr obtained!");
-            }
-            else if (legenderiItem == "motes")
-            {
-                Console.WriteLine("Dragonwrath obtained!");
-            }    
+            //if (legenderiItem == "shards")
+            //{
+            //    Console.WriteLine("Shadowmourne obtained!");
+            //}
+            //else if (legenderiItem == "fragments")
+            //{
+            //    Console.WriteLine("Valanyr obtained!");
+            //}
+            //else if (legenderiItem == "motes")
+            //{
+            //    Console.WriteLine("Dragonwrath obtained!");
+            //}    
         }
     }
 }
