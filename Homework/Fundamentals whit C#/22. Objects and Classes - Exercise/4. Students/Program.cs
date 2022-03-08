@@ -38,7 +38,7 @@ namespace _4._Students
                 string curentStudentFirstName = studentArgument[0];
                 string curentStudentLastName = studentArgument[1];
                 double curentStudentGrade = double.Parse(studentArgument[2]);
-                Student curentStudent = new Student(curentStudentFirstName, curentStudentLastName, curentStudentGrade);
+                Student curentStudent =  new Student(curentStudentFirstName, curentStudentLastName, curentStudentGrade);
                 students.Add(curentStudent);
             }
             List<Student> orderedStudent = students.OrderByDescending(student => student.Grade).ToList();
