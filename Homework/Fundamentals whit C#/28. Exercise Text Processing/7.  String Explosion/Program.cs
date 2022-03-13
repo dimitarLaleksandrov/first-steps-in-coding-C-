@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace _7.__String_Explosion
 {
@@ -22,6 +23,38 @@ namespace _7.__String_Explosion
                 }
             }
             Console.WriteLine(input);
+
+
+
+            //string inputStr = Console.ReadLine();
+            //StringBuilder outputTex = new StringBuilder();
+            //int bombPower = 0;
+            //for (int i = 0; i < inputStr.Length; i++)
+            //{
+            //    char curentChar = inputStr[i];
+            //    if (curentChar == '>')
+            //    {
+            //        outputTex.Append(curentChar);
+            //        int curentBombPower = GetIntValue(inputStr[i + 1]);
+            //        bombPower += curentBombPower;
+            //    }
+            //    else
+            //    {
+            //        if (bombPower > 0)
+            //        {
+            //            bombPower--;
+            //        }
+            //        else
+            //        {
+            //            outputTex.Append(curentChar);
+            //        }
+            //    }
+            //}
+            //Console.WriteLine(outputTex.ToString());
         }
+        //static int GetIntValue (char ch)
+        //{
+        //    return (int)ch - '0';
+        //}
     }
 }
