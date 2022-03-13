@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Linq;
-
+using System.Collections.Generic;
 namespace _10._Winning_Ticket
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            System.Collections.Generic.List<string> tickets = Console.ReadLine().Split(new char[] { ' ', ',', '\t' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            List<string> tickets = Console.ReadLine().Split(new char[] { ' ', ',', '\t' }, StringSplitOptions.RemoveEmptyEntries).ToList();
             foreach (var ticket in tickets)
             {
                 if (ticket.Length == 20)
