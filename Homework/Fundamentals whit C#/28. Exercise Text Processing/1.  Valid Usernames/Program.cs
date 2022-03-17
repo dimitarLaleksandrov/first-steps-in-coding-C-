@@ -22,5 +22,23 @@ namespace _1.__Valid_Usernames
             }
             Console.WriteLine(String.Join("\n", validUsername));
         }
+        //private static bool validation(string username)
+        //{
+        //    if (username.Length < 3 || username.Length > 16)
+        //    {
+        //        return false;
+        //    }
+        //    bool isValid = true;
+        //    for (int i = 0; i < username.Length; i++)
+        //    {
+        //        char curr = username[i];
+        //        if (!(char.IsLetterOrDigit(curr) || curr == '-' || curr == '_'))
+        //        {
+        //            isValid = false;
+        //            break;
+        //        }
+        //    }
+        //    return isValid;
+        //}
     }
 }
