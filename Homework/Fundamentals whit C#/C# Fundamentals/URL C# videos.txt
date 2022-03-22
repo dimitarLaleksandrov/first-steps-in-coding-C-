@@ -45,3 +45,7 @@ Exercise: Text Processing      -    https://youtu.be/8Ms49FJFWRg
 
 
 Regular-Expressions        -       https://youtu.be/oIHkJ-YfOmc
+
+
+
+Exercise: Regular Expressions    -    https://youtu.be/6JaD7lz2VJo
