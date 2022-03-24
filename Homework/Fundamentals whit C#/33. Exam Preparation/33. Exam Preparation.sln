@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1 - Secret Chat", "Problem 1 - Secret Chat\Problem 1 - Secret Chat.csproj", "{8D9A78B3-875D-4266-B90B-7A55B5577EF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2 - Mirror words", "Problem 2 - Mirror words\Problem 2 - Mirror words.csproj", "{1F963A5E-3265-4031-A9FE-6E22F683F1CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D9A78B3-875D-4266-B90B-7A55B5577EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9A78B3-875D-4266-B90B-7A55B5577EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D9A78B3-875D-4266-B90B-7A55B5577EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D9A78B3-875D-4266-B90B-7A55B5577EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F963A5E-3265-4031-A9FE-6E22F683F1CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F963A5E-3265-4031-A9FE-6E22F683F1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F963A5E-3265-4031-A9FE-6E22F683F1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F963A5E-3265-4031-A9FE-6E22F683F1CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F37C033-24E0-4D82-89DF-E0B55413A3AA}
+	EndGlobalSection
+EndGlobal
