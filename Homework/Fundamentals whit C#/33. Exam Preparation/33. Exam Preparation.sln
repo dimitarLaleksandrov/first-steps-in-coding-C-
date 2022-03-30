@@ -7,11 +7,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 1 - Secret Chat", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 2 - Mirror words", "Problem 2 - Mirror words\Problem 2 - Mirror words.csproj", "{1F963A5E-3265-4031-A9FE-6E22F683F1CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 3 - Need for Speed III", "Problem 3 - Need for Speed III\Problem 3 - Need for Speed III.csproj", "{46756F50-CC1F-496B-8084-451E04D17ADE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 3 - Need for Speed III", "Problem 3 - Need for Speed III\Problem 3 - Need for Speed III.csproj", "{46756F50-CC1F-496B-8084-451E04D17ADE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1 - Activation Keys", "Problem 1 - Activation Keys\Problem 1 - Activation Keys.csproj", "{1921C46D-40CF-4791-9325-CE3338E3916E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 1 - Activation Keys", "Problem 1 - Activation Keys\Problem 1 - Activation Keys.csproj", "{1921C46D-40CF-4791-9325-CE3338E3916E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2 - Emoji Detector", "Problem 2 - Emoji Detector\Problem 2 - Emoji Detector.csproj", "{CFD06C30-BFAE-4995-B48C-D1CA2FAF7B06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 2 - Emoji Detector", "Problem 2 - Emoji Detector\Problem 2 - Emoji Detector.csproj", "{CFD06C30-BFAE-4995-B48C-D1CA2FAF7B06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 3 - P!rates", "Problem 3 - P!rates\Problem 3 - P!rates.csproj", "{F8090A2E-9ED9-47BA-9147-34B9F8FDD02D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1 - Password Reset", "Problem 1 - Password Reset\Problem 1 - Password Reset.csproj", "{7CB6D7D8-026C-4A03-91E5-933EA965D386}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2 - Fancy Barcodes", "Problem 2 - Fancy Barcodes\Problem 2 - Fancy Barcodes.csproj", "{2DE3FE42-51E2-401B-8785-A7F7DAD4C3E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 3 - Heroes of Code and Logic VII", "Problem 3 - Heroes of Code and Logic VII\Problem 3 - Heroes of Code and Logic VII.csproj", "{86AA1E16-F47C-40C5-8EDF-B4D0CF88AED2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,22 @@ Global
 		{CFD06C30-BFAE-4995-B48C-D1CA2FAF7B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFD06C30-BFAE-4995-B48C-D1CA2FAF7B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFD06C30-BFAE-4995-B48C-D1CA2FAF7B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8090A2E-9ED9-47BA-9147-34B9F8FDD02D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8090A2E-9ED9-47BA-9147-34B9F8FDD02D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8090A2E-9ED9-47BA-9147-34B9F8FDD02D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8090A2E-9ED9-47BA-9147-34B9F8FDD02D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB6D7D8-026C-4A03-91E5-933EA965D386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB6D7D8-026C-4A03-91E5-933EA965D386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB6D7D8-026C-4A03-91E5-933EA965D386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB6D7D8-026C-4A03-91E5-933EA965D386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DE3FE42-51E2-401B-8785-A7F7DAD4C3E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE3FE42-51E2-401B-8785-A7F7DAD4C3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE3FE42-51E2-401B-8785-A7F7DAD4C3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE3FE42-51E2-401B-8785-A7F7DAD4C3E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AA1E16-F47C-40C5-8EDF-B4D0CF88AED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AA1E16-F47C-40C5-8EDF-B4D0CF88AED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AA1E16-F47C-40C5-8EDF-B4D0CF88AED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AA1E16-F47C-40C5-8EDF-B4D0CF88AED2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
