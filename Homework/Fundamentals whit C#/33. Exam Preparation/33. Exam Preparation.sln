@@ -15,11 +15,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 2 - Emoji Detector"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 3 - P!rates", "Problem 3 - P!rates\Problem 3 - P!rates.csproj", "{F8090A2E-9ED9-47BA-9147-34B9F8FDD02D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1 - Password Reset", "Problem 1 - Password Reset\Problem 1 - Password Reset.csproj", "{7CB6D7D8-026C-4A03-91E5-933EA965D386}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 1 - Password Reset", "Problem 1 - Password Reset\Problem 1 - Password Reset.csproj", "{7CB6D7D8-026C-4A03-91E5-933EA965D386}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2 - Fancy Barcodes", "Problem 2 - Fancy Barcodes\Problem 2 - Fancy Barcodes.csproj", "{2DE3FE42-51E2-401B-8785-A7F7DAD4C3E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 2 - Fancy Barcodes", "Problem 2 - Fancy Barcodes\Problem 2 - Fancy Barcodes.csproj", "{2DE3FE42-51E2-401B-8785-A7F7DAD4C3E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 3 - Heroes of Code and Logic VII", "Problem 3 - Heroes of Code and Logic VII\Problem 3 - Heroes of Code and Logic VII.csproj", "{86AA1E16-F47C-40C5-8EDF-B4D0CF88AED2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 3 - Heroes of Code and Logic VII", "Problem 3 - Heroes of Code and Logic VII\Problem 3 - Heroes of Code and Logic VII.csproj", "{86AA1E16-F47C-40C5-8EDF-B4D0CF88AED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1 - World Tour", "Problem 1 - World Tour\Problem 1 - World Tour.csproj", "{2E6AB337-47DA-4A6F-8EBB-DE702087EAF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2 - Destination Mapper", "Problem 2 - Destination Mapper\Problem 2 - Destination Mapper.csproj", "{0D83F7D2-CBEC-4D7F-AC28-CB2B3A0D013A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 3 - Plant Discovery", "Problem 3 - Plant Discovery\Problem 3 - Plant Discovery.csproj", "{E651B198-6E26-4903-8EA1-69F7A17C1832}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +69,18 @@ Global
 		{86AA1E16-F47C-40C5-8EDF-B4D0CF88AED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86AA1E16-F47C-40C5-8EDF-B4D0CF88AED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86AA1E16-F47C-40C5-8EDF-B4D0CF88AED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E6AB337-47DA-4A6F-8EBB-DE702087EAF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E6AB337-47DA-4A6F-8EBB-DE702087EAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E6AB337-47DA-4A6F-8EBB-DE702087EAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E6AB337-47DA-4A6F-8EBB-DE702087EAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D83F7D2-CBEC-4D7F-AC28-CB2B3A0D013A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D83F7D2-CBEC-4D7F-AC28-CB2B3A0D013A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D83F7D2-CBEC-4D7F-AC28-CB2B3A0D013A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D83F7D2-CBEC-4D7F-AC28-CB2B3A0D013A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E651B198-6E26-4903-8EA1-69F7A17C1832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E651B198-6E26-4903-8EA1-69F7A17C1832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E651B198-6E26-4903-8EA1-69F7A17C1832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E651B198-6E26-4903-8EA1-69F7A17C1832}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
