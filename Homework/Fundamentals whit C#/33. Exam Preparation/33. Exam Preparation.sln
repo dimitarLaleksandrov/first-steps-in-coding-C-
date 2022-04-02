@@ -21,11 +21,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 2 - Fancy Barcodes"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 3 - Heroes of Code and Logic VII", "Problem 3 - Heroes of Code and Logic VII\Problem 3 - Heroes of Code and Logic VII.csproj", "{86AA1E16-F47C-40C5-8EDF-B4D0CF88AED2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1 - World Tour", "Problem 1 - World Tour\Problem 1 - World Tour.csproj", "{2E6AB337-47DA-4A6F-8EBB-DE702087EAF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 1 - World Tour", "Problem 1 - World Tour\Problem 1 - World Tour.csproj", "{2E6AB337-47DA-4A6F-8EBB-DE702087EAF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2 - Destination Mapper", "Problem 2 - Destination Mapper\Problem 2 - Destination Mapper.csproj", "{0D83F7D2-CBEC-4D7F-AC28-CB2B3A0D013A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 2 - Destination Mapper", "Problem 2 - Destination Mapper\Problem 2 - Destination Mapper.csproj", "{0D83F7D2-CBEC-4D7F-AC28-CB2B3A0D013A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 3 - Plant Discovery", "Problem 3 - Plant Discovery\Problem 3 - Plant Discovery.csproj", "{E651B198-6E26-4903-8EA1-69F7A17C1832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem 3 - Plant Discovery", "Problem 3 - Plant Discovery\Problem 3 - Plant Discovery.csproj", "{E651B198-6E26-4903-8EA1-69F7A17C1832}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1 - The Imitation Game", "Problem 1 - The Imitation Game\Problem 1 - The Imitation Game.csproj", "{8085C360-CC50-438E-949D-1FE3895F9B11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2 - Ad Astra", "Problem 2 - Ad Astra\Problem 2 - Ad Astra.csproj", "{437E3A4A-A7A4-4FDD-BFA0-9A7D6248AC68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 3 - The Pianist", "Problem 3 - The Pianist\Problem 3 - The Pianist.csproj", "{E02A065E-55BA-43DE-88A8-B9208FD179D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +87,18 @@ Global
 		{E651B198-6E26-4903-8EA1-69F7A17C1832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E651B198-6E26-4903-8EA1-69F7A17C1832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E651B198-6E26-4903-8EA1-69F7A17C1832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8085C360-CC50-438E-949D-1FE3895F9B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8085C360-CC50-438E-949D-1FE3895F9B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8085C360-CC50-438E-949D-1FE3895F9B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8085C360-CC50-438E-949D-1FE3895F9B11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{437E3A4A-A7A4-4FDD-BFA0-9A7D6248AC68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437E3A4A-A7A4-4FDD-BFA0-9A7D6248AC68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437E3A4A-A7A4-4FDD-BFA0-9A7D6248AC68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437E3A4A-A7A4-4FDD-BFA0-9A7D6248AC68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E02A065E-55BA-43DE-88A8-B9208FD179D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E02A065E-55BA-43DE-88A8-B9208FD179D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E02A065E-55BA-43DE-88A8-B9208FD179D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E02A065E-55BA-43DE-88A8-B9208FD179D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
