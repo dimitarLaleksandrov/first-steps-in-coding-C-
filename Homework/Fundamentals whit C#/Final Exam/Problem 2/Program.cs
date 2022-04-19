@@ -10,7 +10,7 @@ namespace Problem_2
         static void Main(string[] args)
         {
             int numberOfMesegs = int.Parse(Console.ReadLine());
-            string pattern = @"^(\$|\%)([A-Z][a-z]{2,})\1\:\s\[(\d{1,})\]\|\[(\d{1,})\]\|\[(\d{1,})\]\|";
+            string pattern = @"^(\$|\%)([A-Z][a-z]{2,})\1\:\s\[(\d{1,})\]\|\[(\d{1,})\]\|\[(\d{1,})\]\|\n";
             for (int i = 1; i <= numberOfMesegs; i++)
             {
                 string mesege = Console.ReadLine();

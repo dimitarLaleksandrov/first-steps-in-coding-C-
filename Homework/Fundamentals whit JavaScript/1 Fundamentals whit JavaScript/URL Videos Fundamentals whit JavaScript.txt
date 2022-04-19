@@ -1,0 +1,133 @@
+Basic Syntax, Conditional Statements and Loops    -    https://youtu.be/9D3Rl_5xxU4
+
+
+
+Exercise: Basic Syntax, Conditional Statements and Loops    -    https://youtu.be/LeFMi8ycQA8
+
+
+
+HTTP Basics    -   https://youtu.be/PLQBfQW0hxg
+
+
+
+
+Data Types and Variables    -     https://youtu.be/yPYV-2ZmFQo
+
+
+
+
+Exercise: Data Types and Variables   -   https://youtu.be/rZsY_6su1Z0
+
+
+
+HTML & CSS Basics    -    https://youtu.be/UkwfsY3NVeY
+
+
+
+Arrays     -     https://youtu.be/J52FROo0qO0
+
+
+
+Exercise: Arrays    -   https://youtu.be/SHh7Ax_lb9M
+
+
+
+Software Development Concepts - Part 1     -    https://youtu.be/qAc3jKkjN20
+
+
+
+Functions    -    https://youtu.be/fFjb8HeCJew
+
+
+
+
+Exercise: Functions   -  https://youtu.be/Fk82e7x5wGA
+
+
+
+Software Development Concepts - Part 2    -   https://youtu.be/Okewi9zCQ78
+
+
+
+
+Arrays Advanced     -   https://youtu.be/6N23jHlQoLk
+
+
+
+Exercise: Arrays Advanced    -    https://youtu.be/sphormV3AYs
+
+
+
+Exam Preparation   -   https://youtu.be/JPwZDFRn6yY
+
+
+
+Objects and Classes    -    https://youtu.be/hZJGgROd4D8
+
+
+
+Exercise: Objects and Classes   -   https://youtu.be/c6-Uv2fyA9M
+
+
+
+Bitwise Operations     -    https://youtu.be/s66aYp7F6Ts
+
+
+
+
+Associative Arrays     -     https://youtu.be/wD2eMH3hv_o
+
+
+
+
+Exercise: Associative Arrays     -     https://youtu.be/JS93b0Mog_M
+
+
+
+
+Problem Solving     -    https://youtu.be/C0Fslx_TpZ0
+
+
+
+
+Text Processing     -    https://youtu.be/vAO0TJAmck4
+
+
+
+Exercise: Text Processing     -    https://youtu.be/ZhwQRBpidus
+
+
+
+Database Basics     -    https://youtu.be/Dvjvbai9CMk
+
+
+
+
+Regular Expressions     -    https://youtu.be/PPH4jiTDJ3g
+
+
+
+Exercise: Regular Expressions    -   https://youtu.be/SgCKJBLtKEU
+
+
+
+Git and GitHub    -    https://youtu.be/Hpl57nA8YAo
+
+
+
+
+Exam Preparation    -   https://youtu.be/zaa5mHq5M0g
+
+
+
+
+Exam Preparation     -   https://youtu.be/0oV74VA5P4M
+
+
+
+QA Introduction     -    https://youtu.be/XITM4yRWvJk
+
+
+
+
+Basic Web Project     -    https://youtu.be/OqzskJmY9hc
