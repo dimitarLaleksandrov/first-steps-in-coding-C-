@@ -17,5 +17,6 @@ function moving(input) {
     if (allCubesMeters >= 0 && command === "Done") {
         let freeSpace = allCubesMeters;
         console.log(`${freeSpace} Cubic meters left.`);
+        console.log(`${freeSpace} Cubic meters left.`);
     }
 }
