@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Count Same Values in Array", "01. Count Same Values in Array\01. Count Same Values in Array.csproj", "{F305C794-35F5-4119-8F6B-D683C86D6539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Average Student Grades", "02. Average Student Grades\02. Average Student Grades.csproj", "{16E09138-F05F-4661-BD8E-72FE3CEE431C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Largest 3 Numbers", "03. Largest 3 Numbers\03. Largest 3 Numbers.csproj", "{BCDBFDAE-39B7-4BD5-AFA5-387C15D06911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Product Shop", "04. Product Shop\04. Product Shop.csproj", "{1D5F6A8E-0A62-4F18-B0D4-31B3D29ACADC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F305C794-35F5-4119-8F6B-D683C86D6539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F305C794-35F5-4119-8F6B-D683C86D6539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F305C794-35F5-4119-8F6B-D683C86D6539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F305C794-35F5-4119-8F6B-D683C86D6539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16E09138-F05F-4661-BD8E-72FE3CEE431C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E09138-F05F-4661-BD8E-72FE3CEE431C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E09138-F05F-4661-BD8E-72FE3CEE431C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E09138-F05F-4661-BD8E-72FE3CEE431C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCDBFDAE-39B7-4BD5-AFA5-387C15D06911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCDBFDAE-39B7-4BD5-AFA5-387C15D06911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCDBFDAE-39B7-4BD5-AFA5-387C15D06911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCDBFDAE-39B7-4BD5-AFA5-387C15D06911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D5F6A8E-0A62-4F18-B0D4-31B3D29ACADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D5F6A8E-0A62-4F18-B0D4-31B3D29ACADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D5F6A8E-0A62-4F18-B0D4-31B3D29ACADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D5F6A8E-0A62-4F18-B0D4-31B3D29ACADC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B87CCB85-DA87-402D-ADC5-4A2706D2AC02}
+	EndGlobalSection
+EndGlobal
