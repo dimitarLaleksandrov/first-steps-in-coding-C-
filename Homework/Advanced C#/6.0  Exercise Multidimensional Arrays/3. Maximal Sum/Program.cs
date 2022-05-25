@@ -2,11 +2,11 @@
 
 namespace _3._Maximal_Sum
 {
-    internal class Program
+    internal class MaximalSum
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }

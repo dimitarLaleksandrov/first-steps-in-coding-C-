@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace _2._Squares_in_Matrix
 {
-    internal class Program
+    internal class SquaresInMatrix
     {
         static void Main(string[] args)
         {
