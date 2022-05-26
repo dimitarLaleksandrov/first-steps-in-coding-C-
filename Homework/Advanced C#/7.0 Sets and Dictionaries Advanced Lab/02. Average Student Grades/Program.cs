@@ -25,7 +25,7 @@ namespace _02._Average_Student_Grades
             }
             foreach (var student in students)
             {
-                decimal avgGrades = student.Value.Average();
+                decimal avgGrades = Math.Round(student.Value.Average(), 2, MidpointRounding.AwayFromZero);
                 Console.WriteLine($"{student.Key} -> {string.Join(" ", student.Value):f2} (avg: {avgGrades:f2})");
             }
         }
