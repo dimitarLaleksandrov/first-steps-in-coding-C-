@@ -25,8 +25,18 @@ namespace _08._Car_Salesman
                 {
                     string model = engineInfo[0];
                     int power = int.Parse(engineInfo[1]);
-                    int displacement = int.Parse(engineInfo[2]);
-                    engines.Add(new Engine(model, power, displacement));
+                    string n = engineInfo[2];
+                    char[] chars = n.ToCharArray();
+                    if (char.IsDigit(chars[0]))
+                    {
+                        int displacement = int.Parse(engineInfo[2]);
+                        engines.Add(new Engine(model, power, displacement));
+                    }
+                    else
+                    {
+                        string efficiency = engineInfo[2];
+                        engines.Add(new Engine(model, power, efficiency));
+                    }
                 }
                 else if (engineInfo.Length == 2)
                 {
@@ -56,20 +66,30 @@ namespace _08._Car_Salesman
                 {
                     string model = carInfo[0];
                     string engenModel = carInfo[1];
-                    string n = int.TryParse(carInfo[2]);
-                    char[] chars = n.ToCharArray();
-                    if (n = int.TryParse(n)
+                    char[] chars = carInfo[2].ToCharArray();
+                    if (char.IsDigit(chars[0]))
                     {
-
-                    }
-                    int weight = int.Parse();
-                    foreach (var engen in engines)
-                    {
-                        if (engen.Model == engenModel)
+                        int weight = int.Parse(carInfo[2]);
+                        foreach (var engen in engines)
                         {
-                            cars.Add(new Car(model, engen, weight));
+                            if (engen.Model == engenModel)
+                            {
+                                cars.Add(new Car(model, engen, weight));
+                            }
                         }
                     }
+                    else
+                    {
+                        string color = carInfo[2];
+                        foreach (var engen in engines)
+                        {
+                            if (engen.Model == engenModel)
+                            {
+                                cars.Add(new Car(model, engen, color));
+                            }
+                        }
+                    }
+                    
                 }
                 else if (carInfo.Length == 4)
                 {

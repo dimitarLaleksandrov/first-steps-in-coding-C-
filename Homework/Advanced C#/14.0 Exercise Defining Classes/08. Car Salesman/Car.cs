@@ -21,6 +21,12 @@ namespace _08._Car_Salesman
             Engine = engine;
             Weight = weight;
         }
+        public Car(string model, Engine engine, string color)
+        {
+            Model = model;
+            Engine = engine;
+            Color = color;
+        }
         public Car(string model, Engine engine)
         {
             Model = model;

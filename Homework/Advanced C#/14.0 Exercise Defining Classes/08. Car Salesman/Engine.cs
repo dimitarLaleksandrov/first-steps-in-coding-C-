@@ -19,6 +19,12 @@ namespace _08._Car_Salesman
             Power = power;
             Displacement = displacement;
         }
+        public Engine(string model, int power, string efficiency)
+        {
+            Model = model;
+            Power = power;
+            Efficiency = efficiency;
+        }
         public Engine(string model, int power, int displacement, string efficiency)
         {
             Model = model;
