@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Creating Constructors",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Oldest Family Member", "03. Oldest Family Member\03. Oldest Family Member.csproj", "{F1D741D8-F860-4FD3-925F-E52124E727BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Opinion Poll", "04. Opinion Poll\04. Opinion Poll.csproj", "{10CE6F10-D3C3-4B04-B847-826A12385751}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Opinion Poll", "04. Opinion Poll\04. Opinion Poll.csproj", "{10CE6F10-D3C3-4B04-B847-826A12385751}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Speed Racing", "06. Speed Racing\06. Speed Racing.csproj", "{7AC59743-46D4-48D1-AFF7-0056119911A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Speed Racing", "06. Speed Racing\06. Speed Racing.csproj", "{7AC59743-46D4-48D1-AFF7-0056119911A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Raw Data", "07. Raw Data\07. Raw Data.csproj", "{B2A7ABFE-404A-4201-9DAF-8100E4D30902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Car Salesman", "08. Car Salesman\08. Car Salesman.csproj", "{182C44C0-8219-462F-A7D1-BED4EC6CF350}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{7AC59743-46D4-48D1-AFF7-0056119911A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AC59743-46D4-48D1-AFF7-0056119911A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AC59743-46D4-48D1-AFF7-0056119911A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A7ABFE-404A-4201-9DAF-8100E4D30902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A7ABFE-404A-4201-9DAF-8100E4D30902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A7ABFE-404A-4201-9DAF-8100E4D30902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A7ABFE-404A-4201-9DAF-8100E4D30902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182C44C0-8219-462F-A7D1-BED4EC6CF350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182C44C0-8219-462F-A7D1-BED4EC6CF350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182C44C0-8219-462F-A7D1-BED4EC6CF350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182C44C0-8219-462F-A7D1-BED4EC6CF350}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
