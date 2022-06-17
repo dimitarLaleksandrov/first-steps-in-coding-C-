@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MealPlan", "Meal Plan\MealP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverAtWork", "BeaverAtWork\BeaverAtWork.csproj", "{1C228FAF-4428-4896-A4C9-5E58C2106BB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beaver at Work.2.0", "Beaver at Work.2.0\Beaver at Work.2.0.csproj", "{4DA881B4-2923-4B96-8467-EA834123A0C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1C228FAF-4428-4896-A4C9-5E58C2106BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C228FAF-4428-4896-A4C9-5E58C2106BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C228FAF-4428-4896-A4C9-5E58C2106BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DA881B4-2923-4B96-8467-EA834123A0C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA881B4-2923-4B96-8467-EA834123A0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA881B4-2923-4B96-8467-EA834123A0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA881B4-2923-4B96-8467-EA834123A0C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
