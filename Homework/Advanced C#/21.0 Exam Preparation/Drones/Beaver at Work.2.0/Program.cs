@@ -45,50 +45,40 @@ namespace Beaver_at_Work._2._0
             int fishCount = fishesPoint.Count;
             var beaverRow = 0;
             var beaverCol = 0;
+            foreach (var b in beaver)
+            {
+                beaverRow = b.Key;
+                beaverCol = b.Value;
+            }
             string cmd = string.Empty;
             while ((cmd = Console.ReadLine()) != "end" && fishCount > 0)
-            {            
+            {
+                for (int row = 0; row < matrixSize; row++)
+                {
+                    for (int col = 0; col < matrixSize; col++)
+                    {
+                        if (col > 0)
+                        {
+                            Console.Write(" ");
+                        }
+                        Console.Write(matrix[row, col]);
+                    }
+                    Console.WriteLine(" ");
+                }
                 switch (cmd)
                 {
                     case "up":
-                        foreach (var b in beaver)
+                        beaverRow = beaverRow - 1;
+                        if (beaverRow == 0)
                         {
-                            if(b.Key == 0)
-                            {
-                                beaverRow = matrix.Length - 1;
-                                beaverCol = b.Value;
-                            }
-                            else
-                            {
-                                beaverRow = b.Key -1;
-                                beaverCol = b.Value;
-                            }  
+                            beaverRow = matrix.Length -1;
                         }
-                        beaver.Clear();                       
-                        beaver.Add(beaverRow, beaverCol);
-                        foreach (var fish in fishesPoint)
-                        {
-                            if(fish.Key == beaverRow)
-                            {
-                                if(fish.Value == beaverCol)
-                                {
-                                    fishesPoint.Remove(fish.Key);
-                                    fishCount--;
-                                    if(beaverRow == 0)
-                                    {
-                                        beaverRow = matrix.Length - 1;
-                                    }
-                                    else
-                                    {
-                                        beaverRow -= 1;
-                                    }
-                                }
-                            }
-                        }
+
                         break;
 
                     default:
                         break;
+                   
                 }
             }
 

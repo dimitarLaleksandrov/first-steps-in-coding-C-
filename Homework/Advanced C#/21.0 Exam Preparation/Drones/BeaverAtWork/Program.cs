@@ -14,7 +14,7 @@ namespace BeaverAtWork
             for (int rowi = 0; rowi < sizeOfPond; rowi++)
             {
                 string[] input = Console.ReadLine().Split().ToArray();
-                for (int coli = 0; coli < sizeOfPond; coli++)
+                for (int coli = 0; coli < input.Length; coli++)
                 {
                     matrix[rowi, coli] = input[coli][0];
                 }                           

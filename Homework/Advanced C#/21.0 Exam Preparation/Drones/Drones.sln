@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drones", "Drones\Drones.csproj", "{081E61B0-8825-41F8-A20A-A6326B71C240}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3 Drones", "Drones\3 Drones.csproj", "{081E61B0-8825-41F8-A20A-A6326B71C240}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MealPlan", "Meal Plan\MealPlan.csproj", "{2061903C-D784-4F21-9960-22B37A6D495C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1 MealPlan", "Meal Plan\1 MealPlan.csproj", "{2061903C-D784-4F21-9960-22B37A6D495C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverAtWork", "BeaverAtWork\BeaverAtWork.csproj", "{1C228FAF-4428-4896-A4C9-5E58C2106BB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2 BeaverAtWork", "BeaverAtWork\2 BeaverAtWork.csproj", "{1C228FAF-4428-4896-A4C9-5E58C2106BB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beaver at Work.2.0", "Beaver at Work.2.0\Beaver at Work.2.0.csproj", "{4DA881B4-2923-4B96-8467-EA834123A0C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 Blacksmith", "1 Blacksmith\1 Blacksmith.csproj", "{BAB7E269-9206-4D75-B289-7D88E0D5206E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1  Armory", "2. Armory\2.1  Armory.csproj", "{0A95887F-A81F-4236-B832-0B18E03D7D41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.0 Armory", "2.0 Armory\2.0 Armory.csproj", "{ED70A91E-C2E8-47FC-B3F0-117DF11900E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Truffle Hunter", "2. Truffle Hunter\2. Truffle Hunter.csproj", "{8463FF03-AA44-4CCF-B810-ACD796ED86A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +35,22 @@ Global
 		{1C228FAF-4428-4896-A4C9-5E58C2106BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C228FAF-4428-4896-A4C9-5E58C2106BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C228FAF-4428-4896-A4C9-5E58C2106BB1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4DA881B4-2923-4B96-8467-EA834123A0C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4DA881B4-2923-4B96-8467-EA834123A0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4DA881B4-2923-4B96-8467-EA834123A0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4DA881B4-2923-4B96-8467-EA834123A0C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAB7E269-9206-4D75-B289-7D88E0D5206E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAB7E269-9206-4D75-B289-7D88E0D5206E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAB7E269-9206-4D75-B289-7D88E0D5206E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAB7E269-9206-4D75-B289-7D88E0D5206E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A95887F-A81F-4236-B832-0B18E03D7D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A95887F-A81F-4236-B832-0B18E03D7D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A95887F-A81F-4236-B832-0B18E03D7D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A95887F-A81F-4236-B832-0B18E03D7D41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED70A91E-C2E8-47FC-B3F0-117DF11900E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED70A91E-C2E8-47FC-B3F0-117DF11900E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED70A91E-C2E8-47FC-B3F0-117DF11900E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED70A91E-C2E8-47FC-B3F0-117DF11900E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8463FF03-AA44-4CCF-B810-ACD796ED86A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8463FF03-AA44-4CCF-B810-ACD796ED86A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8463FF03-AA44-4CCF-B810-ACD796ED86A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8463FF03-AA44-4CCF-B810-ACD796ED86A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
