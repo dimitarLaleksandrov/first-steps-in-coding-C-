@@ -9,15 +9,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1 MealPlan", "Meal Plan\1 M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2 BeaverAtWork", "BeaverAtWork\2 BeaverAtWork.csproj", "{1C228FAF-4428-4896-A4C9-5E58C2106BB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 Blacksmith", "1 Blacksmith\1 Blacksmith.csproj", "{BAB7E269-9206-4D75-B289-7D88E0D5206E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1 Blacksmith", "1 Blacksmith\1 Blacksmith.csproj", "{BAB7E269-9206-4D75-B289-7D88E0D5206E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1  Armory", "2. Armory\2.1  Armory.csproj", "{0A95887F-A81F-4236-B832-0B18E03D7D41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.1  Armory", "2. Armory\2.1  Armory.csproj", "{0A95887F-A81F-4236-B832-0B18E03D7D41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.0 Armory", "2.0 Armory\2.0 Armory.csproj", "{ED70A91E-C2E8-47FC-B3F0-117DF11900E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.0 Armory", "2.0 Armory\2.0 Armory.csproj", "{ED70A91E-C2E8-47FC-B3F0-117DF11900E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Truffle Hunter", "2. Truffle Hunter\2. Truffle Hunter.csproj", "{8463FF03-AA44-4CCF-B810-ACD796ED86A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Truffle Hunter", "2. Truffle Hunter\2. Truffle Hunter.csproj", "{8463FF03-AA44-4CCF-B810-ACD796ED86A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUp", "StartUp\StartUp.csproj", "{26479AF9-D058-42ED-B065-E229000F98DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartUp", "StartUp\StartUp.csproj", "{26479AF9-D058-42ED-B065-E229000F98DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 BakeryShop", "1 BakeryShop\1 BakeryShop.csproj", "{C1D59D44-E8DE-4A69-B75A-F3BD38987782}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 Beaver at Work", "2 Beaver at Work\2 Beaver at Work.csproj", "{3C18BF7C-FB48-4A3E-9B3E-A2FBF4AD7A4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{26479AF9-D058-42ED-B065-E229000F98DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26479AF9-D058-42ED-B065-E229000F98DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26479AF9-D058-42ED-B065-E229000F98DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D59D44-E8DE-4A69-B75A-F3BD38987782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D59D44-E8DE-4A69-B75A-F3BD38987782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D59D44-E8DE-4A69-B75A-F3BD38987782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D59D44-E8DE-4A69-B75A-F3BD38987782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C18BF7C-FB48-4A3E-9B3E-A2FBF4AD7A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C18BF7C-FB48-4A3E-9B3E-A2FBF4AD7A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C18BF7C-FB48-4A3E-9B3E-A2FBF4AD7A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C18BF7C-FB48-4A3E-9B3E-A2FBF4AD7A4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

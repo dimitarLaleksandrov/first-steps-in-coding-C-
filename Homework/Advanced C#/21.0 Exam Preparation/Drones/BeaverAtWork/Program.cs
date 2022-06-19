@@ -19,6 +19,7 @@ namespace BeaverAtWork
                     matrix[rowi, coli] = input[coli][0];
                 }                           
             }
+            PrintMatris(matrix);
             (int row, int col) = FindBeaberLocation(matrix);
             int totalBrancesCount = CalcolatTotalBrancescount(matrix);
             int bramchesLeft = totalBrancesCount;
