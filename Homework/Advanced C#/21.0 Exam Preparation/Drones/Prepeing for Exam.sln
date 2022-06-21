@@ -19,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Truffle Hunter", "2. Tru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartUp", "StartUp\StartUp.csproj", "{26479AF9-D058-42ED-B065-E229000F98DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 BakeryShop", "1 BakeryShop\1 BakeryShop.csproj", "{C1D59D44-E8DE-4A69-B75A-F3BD38987782}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1 BakeryShop", "1 BakeryShop\1 BakeryShop.csproj", "{C1D59D44-E8DE-4A69-B75A-F3BD38987782}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 Beaver at Work", "2 Beaver at Work\2 Beaver at Work.csproj", "{3C18BF7C-FB48-4A3E-9B3E-A2FBF4AD7A4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2 Beaver at Work", "2 Beaver at Work\2 Beaver at Work.csproj", "{3C18BF7C-FB48-4A3E-9B3E-A2FBF4AD7A4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 Scheduling", "1 Scheduling\1 Scheduling.csproj", "{B65238C0-735A-4A3E-9219-C0B5D2699040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Garden", "2. Garden\2. Garden.csproj", "{6D3DFFFD-BD1E-4021-B775-D02E4512EBD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{3C18BF7C-FB48-4A3E-9B3E-A2FBF4AD7A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C18BF7C-FB48-4A3E-9B3E-A2FBF4AD7A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C18BF7C-FB48-4A3E-9B3E-A2FBF4AD7A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B65238C0-735A-4A3E-9219-C0B5D2699040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B65238C0-735A-4A3E-9219-C0B5D2699040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B65238C0-735A-4A3E-9219-C0B5D2699040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B65238C0-735A-4A3E-9219-C0B5D2699040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D3DFFFD-BD1E-4021-B775-D02E4512EBD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D3DFFFD-BD1E-4021-B775-D02E4512EBD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D3DFFFD-BD1E-4021-B775-D02E4512EBD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D3DFFFD-BD1E-4021-B775-D02E4512EBD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
