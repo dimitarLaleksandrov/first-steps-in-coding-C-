@@ -31,7 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Flower Wreaths", "1. Flo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Bee", "2. Bee\2. Bee.csproj", "{86148379-9B0A-47F7-94FA-2385E8662D29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.2 Drones", "3.2 Drones\3.2 Drones.csproj", "{F35D8EFC-D466-4F7D-BDA1-8B07083A1504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.2 Drones", "3.2 Drones\3.2 Drones.csproj", "{F35D8EFC-D466-4F7D-BDA1-8B07083A1504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Bombs", "1. Bombs\1. Bombs.csproj", "{89D3DA0D-C482-468A-A949-5B47131BC60F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Snake", "2. Snake\2. Snake.csproj", "{65324DDB-4FCC-4FF6-88B3-1BA744E84A4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +103,14 @@ Global
 		{F35D8EFC-D466-4F7D-BDA1-8B07083A1504}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F35D8EFC-D466-4F7D-BDA1-8B07083A1504}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F35D8EFC-D466-4F7D-BDA1-8B07083A1504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89D3DA0D-C482-468A-A949-5B47131BC60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D3DA0D-C482-468A-A949-5B47131BC60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D3DA0D-C482-468A-A949-5B47131BC60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D3DA0D-C482-468A-A949-5B47131BC60F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65324DDB-4FCC-4FF6-88B3-1BA744E84A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65324DDB-4FCC-4FF6-88B3-1BA744E84A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65324DDB-4FCC-4FF6-88B3-1BA744E84A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65324DDB-4FCC-4FF6-88B3-1BA744E84A4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
