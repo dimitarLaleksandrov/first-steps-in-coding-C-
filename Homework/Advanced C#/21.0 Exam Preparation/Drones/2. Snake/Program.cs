@@ -223,10 +223,10 @@ namespace _2._Snake
         }
         public static void FillTheMatrix(char[,] matrix, int matrixSize)
         {
-            for (int row = 0; row < matrixSize; row++)
+            for (int row = 0; row < matrix.GetLength(0); row++)
             {
                 char[] input = Console.ReadLine().ToCharArray();
-                for (int col = 0; col < matrixSize; col++)
+                for (int col = 0; col < matrix.GetLength(1); col++)
                 {
                     matrix[row, col] = input[col];
                 }
