@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_4._Exercise_Inheritance</RootNamespace>
+    <RootNamespace>Class_Box_Data</RootNamespace>
   </PropertyGroup>
 
 </Project>

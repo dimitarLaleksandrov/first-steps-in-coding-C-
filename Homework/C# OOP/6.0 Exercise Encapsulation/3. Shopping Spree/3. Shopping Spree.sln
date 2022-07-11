@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Shopping Spree", "3. Shopping Spree\3. Shopping Spree.csproj", "{DA4D020B-CEC8-4D02-BE29-DAA053F7CEA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Football Team Generator", "5. Football Team Generator\5. Football Team Generator.csproj", "{BD89AEE7-1B00-48D7-97FB-B02195C307E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA4D020B-CEC8-4D02-BE29-DAA053F7CEA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4D020B-CEC8-4D02-BE29-DAA053F7CEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4D020B-CEC8-4D02-BE29-DAA053F7CEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4D020B-CEC8-4D02-BE29-DAA053F7CEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD89AEE7-1B00-48D7-97FB-B02195C307E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD89AEE7-1B00-48D7-97FB-B02195C307E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD89AEE7-1B00-48D7-97FB-B02195C307E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD89AEE7-1B00-48D7-97FB-B02195C307E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2917F67E-B115-4715-83D6-CD2D6B51D5B4}
+	EndGlobalSection
+EndGlobal
