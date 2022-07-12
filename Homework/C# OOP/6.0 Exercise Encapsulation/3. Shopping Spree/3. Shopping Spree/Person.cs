@@ -24,7 +24,7 @@ namespace ShoppingSpree
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentNullException("The name cannot be an empty string");
+                    throw new ArgumentException("The name cannot be an empty string");
                 }
                 this.name = value;
             }
@@ -36,7 +36,7 @@ namespace ShoppingSpree
             {
                 if(value < 0)
                 {
-                    throw new ArgumentOutOfRangeException("Money cannot be a negative number");
+                    throw new ArgumentException("Money cannot be a negative number");
                 }
                 this.money = value;
             }

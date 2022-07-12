@@ -36,6 +36,7 @@ namespace ShoppingSpree
                 {
                     throw new ArgumentException(" Money cannot be a negative number");
                 }
+                this.cost = value;
             }
         }
     }
