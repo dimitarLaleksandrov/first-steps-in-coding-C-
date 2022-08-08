@@ -10,18 +10,20 @@ namespace Formula1.Models
         private string raceName;
         private int numberOfLaps;
         private bool tookPlace;
-        private readonly ICollection<IPilot> pilots;
+        private readonly List<IPilot> pilots;
 
         public Race(string raceName, int numberOfLaps)
         {
             this.RaceName = raceName;
             this.NumberOfLaps = numberOfLaps;
+            this.TookPlace = false;
+            this.pilots = new List<IPilot>();
         }
 
         public string RaceName
         {
             get { return this.raceName; }
-            set
+            private set
             {
                 if (string.IsNullOrWhiteSpace(value) || value.Length < 5)
                 {
@@ -33,7 +35,7 @@ namespace Formula1.Models
         public int NumberOfLaps
         {
             get { return this.numberOfLaps; }
-            set
+            private set
             {
                 if (value < 1)
                 {
@@ -48,12 +50,14 @@ namespace Formula1.Models
             get { return this.tookPlace; }
             set
             {
-                value = false;
                 this.tookPlace = value;
             }
         }
 
-        public ICollection<IPilot> Pilots => this.pilots;
+        public ICollection<IPilot> Pilots
+        {
+            get { return this.pilots; }
+        }
        
 
         public void AddPilot(IPilot pilot)
@@ -67,8 +71,9 @@ namespace Formula1.Models
             str.AppendLine($"The {this.RaceName} race has:");
             str.AppendLine($"Participants: {this.Pilots.Count}");
             str.AppendLine($"Number of laps: {this.NumberOfLaps}");
-            str.AppendLine($"Took place: {this.TookPlace}");
-            return str.ToString();
+            var place = TookPlace == true ? "Yes" : "No";
+            str.AppendLine($"Took place: {place}");
+            return str.ToString().TrimEnd();
         }
     }
 }

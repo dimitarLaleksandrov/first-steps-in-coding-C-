@@ -10,7 +10,7 @@ namespace Formula1.Models
         private string model;
         private int horsepower;
         private double engineDisplacement;
-        protected FormulaOneCar(string model, int horsepower, double engineDisplacement)
+        public FormulaOneCar(string model, int horsepower, double engineDisplacement)
         {
             this.Model = model;
             this.Horsepower = horsepower;
@@ -19,7 +19,7 @@ namespace Formula1.Models
         public string Model
         {
             get { return this.model; }
-            protected set
+            private set
             {
                 if(string.IsNullOrWhiteSpace(value) || value.Length < 3)
                 {
@@ -32,7 +32,7 @@ namespace Formula1.Models
         public int Horsepower
         {
             get { return this.horsepower; }
-            protected set
+            private set
             {
                 if(value < 900 || value > 1050)
                 {

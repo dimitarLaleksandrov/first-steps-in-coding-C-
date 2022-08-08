@@ -8,17 +8,19 @@ namespace Formula1.Models
     public class Pilot : IPilot
     {
         private string fullName;
-        private IFormulaOneCar car;
+        IFormulaOneCar car;
         private int numberOfWins;
         private bool canRace;
         public Pilot(string fullName)
         {
             this.FullName = fullName;
+            this.canRace = false;
+            this.NumberOfWins = 0;
         }
         public string FullName
         {
             get { return this.fullName; }
-            set
+            private set
             {
                 if (string.IsNullOrWhiteSpace(value) || value.Length < 5)
                 {
@@ -31,7 +33,7 @@ namespace Formula1.Models
         public IFormulaOneCar Car
         {
             get { return this.car; }
-            set
+            private set
             {
                 if(value == null)
                 {
@@ -44,15 +46,14 @@ namespace Formula1.Models
         public int NumberOfWins
         {
             get { return this.numberOfWins; }
-            set { this.numberOfWins = value; }
+            private set { this.numberOfWins = value; }
         }
 
         public bool CanRace
         {
             get { return this.canRace; }
-            set 
+            private set 
             {
-                value = false;
                 this.canRace = value;
             }
         }
@@ -67,7 +68,7 @@ namespace Formula1.Models
         {
             this.NumberOfWins++;
         }
-        public string ToString()
+        public override string ToString()
         {
             var str = $"Pilot {this.FullName} has {this.NumberOfWins} wins.";
             return str.ToString();
