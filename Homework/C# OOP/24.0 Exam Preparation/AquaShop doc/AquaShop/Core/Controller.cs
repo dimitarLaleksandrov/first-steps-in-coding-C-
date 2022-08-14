@@ -101,7 +101,7 @@ namespace AquaShop.Core
         }
         public string FeedFish(string aquariumName)
         {
-            IAquarium aquarium = this.aquariums.FirstOrDefault(x => x.Name == aquariumName);
+            IAquarium aquarium = this.aquariums.FirstOrDefault(a => a.Name == aquariumName);
             aquarium?.Feed();
             return String.Format(OutputMessages.FishFed, aquarium?.Fish.Count);
         }
