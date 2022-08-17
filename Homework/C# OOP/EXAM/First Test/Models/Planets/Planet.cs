@@ -75,20 +75,20 @@ namespace PlanetWars.Models.Planets
 
         public void AddUnit(IMilitaryUnit unit)
         {
-            this.units.AddItem(unit);
-            //if (units.FindByName(unit.GetType().Name) == null)
-            //{
-            //    this.units.AddItem(unit);
-            //}   
+            //this.units.AddItem(unit);
+            if (units.FindByName(unit.GetType().Name) == null)
+            {
+                this.units.AddItem(unit);
+            }
         }
 
         public void AddWeapon(IWeapon weapon)
         {
-            this.weapons.AddItem(weapon);
-            //if (weapons.FindByName(weapon.GetType().Name) == null)
-            //{
-            //    this.weapons.AddItem(weapon);
-            //}
+            //this.weapons.AddItem(weapon);
+            if (weapons.FindByName(weapon.GetType().Name) == null)
+            {
+                this.weapons.AddItem(weapon);
+            }
         }
 
         public string PlanetInfo()

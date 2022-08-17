@@ -11,6 +11,7 @@ namespace PlanetWars.Models.Weapons
         
         protected Weapon(int destructionLevel, double price)
         {
+            this.ValidateDestructionLevel(destructionLevel);
             this.DestructionLevel = destructionLevel;
             this.Price = price;
         }
@@ -20,10 +21,10 @@ namespace PlanetWars.Models.Weapons
             private set { this.price = value; }
         }
 
-        public abstract int DestructionLevel
+        public int DestructionLevel
         {
             get;
-            set;
+            private set;
         }
         protected bool ValidateDestructionLevel(int destructionLevel)
         {
