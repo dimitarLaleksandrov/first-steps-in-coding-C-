@@ -24,16 +24,16 @@ namespace NavalVessels.Models
             {
                 this.SonarMode = true;
                 this.MainWeaponCaliber += 40;
-                this.Speed -= 4;
+                this.Speed -= 5;
             }
             else if (this.SonarMode == true)
             {
                 this.SonarMode = false;
                 this.MainWeaponCaliber -= 40;
-                this.Speed += 4;
+                this.Speed += 5;
             }
         }
-        public new void RepairVessel()
+        public override void RepairVessel()
         {
             if (this.ArmorThickness < BattleshipArmorThickness)
             {
@@ -44,8 +44,9 @@ namespace NavalVessels.Models
         {
             var sb = new StringBuilder();
             var onOrOff = this.SonarMode == true ? "ON" : "OFF";
+            sb.Append(base.ToString());
             sb.AppendLine("*Sonar mode: " + onOrOff);
-            return base.ToString() + sb.ToString();
+            return sb.ToString();
         }
     }
 }

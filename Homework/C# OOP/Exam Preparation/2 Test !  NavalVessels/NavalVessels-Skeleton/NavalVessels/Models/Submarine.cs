@@ -34,7 +34,7 @@ namespace NavalVessels.Models
                 this.Speed += 4;
             }
         }
-        public new void RepairVessel()
+        public override void RepairVessel()
         {
             if (this.ArmorThickness < SubmarineArmorThickness)
             {
@@ -45,8 +45,9 @@ namespace NavalVessels.Models
         {
             var sb = new StringBuilder();
             var onOrOff = this.SubmergeMode == true ? "ON" : "OFF";
+            sb.Append(base.ToString());
             sb.AppendLine("*Sonar mode: " + onOrOff);
-            return base.ToString() + sb.ToString();
+            return sb.ToString();
         }
     }
 }

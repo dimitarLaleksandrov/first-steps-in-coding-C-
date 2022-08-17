@@ -88,14 +88,12 @@ namespace NavalVessels.Models
             this.Targets.Add(target.Name);
         }
 
-        public void RepairVessel()
-        {
-            this.ArmorThickness = armorThickness;
-        }
+        public abstract void RepairVessel();    
         public override string ToString()
         {
             var sb = new StringBuilder();
             sb.AppendLine($"- {this.Name}");
+            sb.AppendLine($"*Type: {this.GetType().Name}");
             sb.AppendLine($"*Armor thickness: {this.ArmorThickness}");
             sb.AppendLine($"*Main weapon caliber: {this.MainWeaponCaliber}");
             sb.AppendLine($"*Speed: {this.Speed} knots");

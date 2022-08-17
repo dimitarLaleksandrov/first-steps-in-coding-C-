@@ -21,6 +21,8 @@ namespace PlanetWars.Models.Planets
         {
             this.Name = name;
             this.Budget = budget;
+            this.units = new UnitRepository();
+            this.weapons = new WeaponRepository();
         }
         public string Name
         {
@@ -50,22 +52,20 @@ namespace PlanetWars.Models.Planets
 
         public double MilitaryPower
         {
-            get { return this.militaryPower; }
-            private set
+            get 
             {
-                double TotalAmount = (this.units.Models.Sum(m => m.EnduranceLevel)) + (this.weapons.Models.Sum(m => m.DestructionLevel));
-                var AnonymousImpactUnit = this.Army.Any(a => a.GetType().Name == "AnonymousImpactUnit");
-                var NuclearWeapon = this.Weapons.Any(w => w.GetType().Name == "NuclearWeapon");
-                if (AnonymousImpactUnit)
+                double totalAmount = (this.units.Models.Sum(m => m.EnduranceLevel)) + (this.weapons.Models.Sum(m => m.DestructionLevel));
+                var anonymousImpactUnit = this.Army.Any(a => a.GetType().Name == "AnonymousImpactUnit");
+                var nuclearWeapon = this.Weapons.Any(w => w.GetType().Name == "NuclearWeapon");
+                if (anonymousImpactUnit)
                 {
-                    TotalAmount += (TotalAmount * 0.30d);
+                    totalAmount += (totalAmount * 0.30d);
                 }
-                else if (NuclearWeapon)
+                else if (nuclearWeapon)
                 {
-                    TotalAmount += (TotalAmount * 0.45d);
+                    totalAmount += (totalAmount * 0.45d);
                 }
-                value = TotalAmount;
-                this.militaryPower = Math.Round(value, 3);
+                return Math.Round(totalAmount, 3);
             }
         }
 
@@ -76,11 +76,19 @@ namespace PlanetWars.Models.Planets
         public void AddUnit(IMilitaryUnit unit)
         {
             this.units.AddItem(unit);
+            //if (units.FindByName(unit.GetType().Name) == null)
+            //{
+            //    this.units.AddItem(unit);
+            //}   
         }
 
         public void AddWeapon(IWeapon weapon)
         {
             this.weapons.AddItem(weapon);
+            //if (weapons.FindByName(weapon.GetType().Name) == null)
+            //{
+            //    this.weapons.AddItem(weapon);
+            //}
         }
 
         public string PlanetInfo()
@@ -88,24 +96,8 @@ namespace PlanetWars.Models.Planets
             var sb = new StringBuilder();
             sb.AppendLine($"Planet: {Name}");
             sb.AppendLine($"--Budget: {Budget} billion QUID");
-            sb.Append("--Forces: ");
-            if (Army.Count == 0)
-            {
-                sb.AppendLine("No units");
-            }
-            else
-            {
-                sb.AppendLine(String.Join(", ", units.Models));
-            }
-            sb.Append("--Combat equipment: ");
-            if(Weapons.Count == 0)
-            {
-                sb.AppendLine("No weapons");
-            }
-            else
-            {
-                sb.AppendLine(String.Join(", ", weapons.Models));
-            }
+            sb.AppendLine($"--Forces: {(Army.Any() ? string.Join(", ", Army.Select(a => a.GetType().Name)) : "No units")}");
+            sb.AppendLine($"--Combat equipment: {(Weapons.Any() ? string.Join(", ", Weapons.Select(w => w.GetType().Name)) : "No weapons")}");
             sb.AppendLine($"--Military Power: {MilitaryPower}");
             return sb.ToString();
         }

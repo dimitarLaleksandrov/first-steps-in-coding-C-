@@ -10,12 +10,12 @@ namespace NavalVessels.Models
     {
         private string fullName;
         private int combatExperience;
-        private ICollection<Contracts.Version> vessels;
+        private ICollection<IVersion> vessels;
         public Captain(string fullName)
         {
             this.FullName = fullName;
             this.CombatExperience = 0;
-            this.Vessels = new List<Contracts.Version>();
+            this.Vessels = new List<IVersion>();
         }
         public string FullName
         {
@@ -38,14 +38,13 @@ namespace NavalVessels.Models
                 this.combatExperience = value;
             }
         }
-
-        public ICollection<Contracts.Version> Vessels
+        public ICollection<IVersion> Vessels
         {
             get { return this.vessels; }
             private set { this.vessels = value; }
         }
 
-        public void AddVessel(Contracts.Version vessel)
+        public void AddVessel(IVersion vessel)
         {
             if (vessel == null)
             {

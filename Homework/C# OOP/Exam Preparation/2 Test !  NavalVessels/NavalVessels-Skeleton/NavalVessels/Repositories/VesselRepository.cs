@@ -26,14 +26,13 @@ namespace NavalVessels.Repositories
 
         public IVersion FindByName(string name)
         {
-            var veslle = models.Where(v => v.Name == name);
+            var veslle = models.FirstOrDefault(v => v.Name == name);
             return (IVersion)veslle;
         }
 
         public bool Remove(IVersion model)
         {
-            var removevessel = this.models.Remove(model);
-            return removevessel;
+            return this.models.Remove(model);
         }
     }
 }

@@ -20,15 +20,10 @@ namespace PlanetWars.Models.Weapons
             }
             set
             {
-                if (value < 1)
+                if (base.ValidateDestructionLevel(value))
                 {
-                    throw new ArgumentException("Destruction level cannot be zero or negative.");
+                    destructionLevel = value;
                 }
-                else if(value > 10)
-                {
-                    throw new ArgumentException("Destruction level cannot exceed 10 power points.");
-                }
-                this.destructionLevel = value;
             }
         }
     }

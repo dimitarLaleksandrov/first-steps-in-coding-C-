@@ -28,7 +28,7 @@ namespace PlanetWars.Repositories
 
         public bool RemoveItem(string name)
         {
-            return this.models.Remove(this.models.FirstOrDefault(m => m.GetType().Name == name));
+            return this.models.Remove(this.FindByName(name));
         }
     }
 }
