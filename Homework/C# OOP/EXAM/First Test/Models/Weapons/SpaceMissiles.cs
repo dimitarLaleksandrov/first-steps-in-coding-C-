@@ -7,9 +7,9 @@ namespace PlanetWars.Models.Weapons
     public class SpaceMissiles :  Weapon
     {
         private const double SpaceMissilesPrice = 8.75d;
-        private int destructionLevel;
         public SpaceMissiles(int destructionLevel) : base(destructionLevel, SpaceMissilesPrice)
         {
+<<<<<<< HEAD
             this.DestructionLevel = destructionLevel;
         }
         public override int DestructionLevel
@@ -25,6 +25,8 @@ namespace PlanetWars.Models.Weapons
                     destructionLevel = value;
                 }
             }
+=======
+>>>>>>> 0a4fa02efdd9b285fcd9b13367e5f1b314b56cf0
         }
     }
 }

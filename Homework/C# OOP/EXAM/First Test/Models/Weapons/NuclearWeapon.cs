@@ -7,9 +7,9 @@ namespace PlanetWars.Models.Weapons
     public class NuclearWeapon : Weapon
     {
         private const double NuclearWeaponPrice = 15.0d;
-        private int destructionLevel;
         public NuclearWeapon(int destructionLevel) : base(destructionLevel, NuclearWeaponPrice)
         {
+<<<<<<< HEAD
             this.DestructionLevel = destructionLevel;
         }
         public override int DestructionLevel
@@ -25,6 +25,8 @@ namespace PlanetWars.Models.Weapons
                     destructionLevel = value;
                 }
             }
+=======
+>>>>>>> 0a4fa02efdd9b285fcd9b13367e5f1b314b56cf0
         }
     }
 }

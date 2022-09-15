@@ -7,9 +7,9 @@ namespace PlanetWars.Models.Weapons
     public class BioChemicalWeapon : Weapon
     {
         private const double BioChemicalWeaponPrice = 3.20d;
-        private int destructionLevel;
         public BioChemicalWeapon(int destructionLevel) : base(destructionLevel, BioChemicalWeaponPrice)
         {
+<<<<<<< HEAD
             this.DestructionLevel = destructionLevel;
         }
         public override int DestructionLevel
@@ -25,6 +25,8 @@ namespace PlanetWars.Models.Weapons
                     destructionLevel = value;
                 }
             }
+=======
+>>>>>>> 0a4fa02efdd9b285fcd9b13367e5f1b314b56cf0
         }
     }
 }
