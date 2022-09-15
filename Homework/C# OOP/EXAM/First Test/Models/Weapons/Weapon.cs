@@ -23,7 +23,7 @@ namespace PlanetWars.Models.Weapons
         public abstract int DestructionLevel
         {
             get;
-            set;
+            protected set;
         }
         protected bool ValidateDestructionLevel(int destructionLevel)
         {

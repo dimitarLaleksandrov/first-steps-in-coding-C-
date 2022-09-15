@@ -18,7 +18,7 @@ namespace PlanetWars.Models.Weapons
             {
                 return this.destructionLevel;
             }
-            set
+            protected set
             {
                 if (base.ValidateDestructionLevel(value))
                 {
