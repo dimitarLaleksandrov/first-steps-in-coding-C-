@@ -1,0 +1,76 @@
+1. Extract project files and examine them
+2. Setup NPM project and install dependencies
+3. Examine HTML files and determine broad template structure
+4. Create application entry point and route placeholder
+5. Write remote request function
+6.0 Implement views
+6.1 Create static page template
+6.2 Implaments data reequest logic
+6.3 Add event listeners
+
+ START
+
+
+in api.js  import { getUserData } from '../util.js';   then create "function request"
+in src create "util.js"
+in util.js create "function getUserData" "function settUserData" "function clearUserData"
+
+in api.js create "user = getUserData()"
+in api.js create "const host"
+in api.js create try catch for teh errors hadelings
+in api,js create "response"
+in api.js create "result" from the surver back out
+in api.js create  export "get" "put" "post" "delete"
+in api create user.js
+in user.js create import "post" from "./api.js"
+in user.js create export acyn function "login" use object to get id email accessToken whit await post
+in user.js use func settUserData() whit the object upon
+in user.js create export async function "login", export async function "register", export async function "logout"
+
+TEST
+in app.js import * as api from './api/user'; window.api = api;
+in index.html in 
+<head>
+<meta charset="UTF-8">
+    <title>Pet Care</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+   "we creat ===>"  <script src="/src/app.js" type="module"></script>
+</head>
+
+
+in src creat "lib.js"
+in lib.js create "export {render, html, nothing} from '../node_modules/lit-html/lit-html.js';"
+in lib.js create "export {default as page} from '../node_modules/page/page.mjs';"
+
+
+in index.html chaing "li" path in home, login, register, create ........
+
+
+in app.js create import {page, renred} from './lib.js'
+
+in app.js create =====>
+"  page('/', ()=> console.log('home'));
+page('/catalog', ()=> console.log('catalog'));
+page('/catalog/:id', ()=> console.log('details'));
+page('/edit/:id', ()=> console.log('edit/:id'));
+page('/create', ()=> console.log('create'));
+page('/login', ()=> console.log('login'));
+page('/register', ()=> console.log('register'));
+
+page.start();
+"
+
+
+in src creare folder views
+in folder views create home.js
+in home.js create import {html} from '..lib.js';
+in home.js create const homeTemplate = () => html`
+// welcoem page in from example.html
+`;
+in home.js create export function showHome
+
+in app.js create const main = document.getElementById('content');
+in app.js create function renderMain
+in app.js create function decorateContext
+in app.js use - create page(decorateContext);
+

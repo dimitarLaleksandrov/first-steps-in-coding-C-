@@ -1,0 +1,37 @@
+DB - relaciani- promenq6ti se po stupka  , ne relacioni
+
+ssms - queri ili azure programi za conek. to sql surver
+
+ in SQL Command then what we not hem to du then name
+
+
+
+Create ->  CREATE DB
+		CREATE TABLE
+		INSERT INTO  Table_Name(column1, column2....)
+		VALUES
+		(Row1Value1,Row2Value2......)
+		(Row2Value2,Row1Value1......)	
+
+
+
+Read ->  SELECT ColumnName1, ColumnName2	FROM  Table
+		WHERE Codition
+		ORDER BY ColumnName  ASC/DESC
+
+
+Update -> UPDATE TableName
+		SET Column Name = Value
+		WHERE Codition
+
+
+Delete -> DELETE FROM TableName
+		WHERE Condition
+
+
+View -> Store a comlex SQL Select - to se izpalnqva vseki pat kogato se izvika  - nese zapazva kato danni , 
+						zapazva se samiq select - zaqvka  6te varner promenenite danni
+
+
+
+		

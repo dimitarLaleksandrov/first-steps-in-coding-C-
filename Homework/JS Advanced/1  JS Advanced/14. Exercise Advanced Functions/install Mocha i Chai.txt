@@ -1,0 +1,21 @@
+in solution at the end tipe
+
+
+module.exports = bookSelection;
+
+
+-----------------------
+
+
+
+in TERMINAL
+
+-------------
+
+npm init  -- press ENTER
+
+npm install  -- press ENTER
+
+npm install chai  -- press ENTER
+
+npm install mocha  -- press ENTER

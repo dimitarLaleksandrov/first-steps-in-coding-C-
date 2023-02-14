@@ -1,0 +1,11 @@
+{
+    "vscode-janus-debug.uploadOnSave": [
+        "app",
+        "lib",
+        "home",
+        "e2e.test",
+        "catalog",
+        "data",
+        "login"
+    ]
+}
