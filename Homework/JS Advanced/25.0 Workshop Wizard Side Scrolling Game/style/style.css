@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.game {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.play-game {
+    background: linear-gradient(to bottom, #90dffe 0%, #38a3d1 100%);
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.start-game {
+    background-color: rgb(0, 115, 255);
+    width: 100%;
+    height: 100%;
+}
+
+#startGameplay {
+    position: absolute;
+    left: calc(100% / 2 - 58px);
+    top: calc(100% /2 - 7px);
+}
+
+
+/*.wizzard {
+    background-image: url(../resursez/wizard.png);
+    width: 82px;
+    height: 100px;
+    position: absolute;
+    top: 350px;
+}

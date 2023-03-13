@@ -162,6 +162,7 @@ namespace _2._0_Armory
                     default:
                         break;
                 }
+                PrintMatrix(matrix);
             }
             if (brakeTheWhile)
             {

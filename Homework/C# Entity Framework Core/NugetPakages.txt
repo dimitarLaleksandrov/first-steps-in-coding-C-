@@ -1,0 +1,10 @@
+instal on Onli progekt not all solution evri time wen u strat new one
+
+
+
+Microsoft.EntityFrameworkCore.SqlServer
+
+Microsoft.EntityFrameworkCore.Tools 
+
+Microsoft.EntityFrameworkCore.Design
+

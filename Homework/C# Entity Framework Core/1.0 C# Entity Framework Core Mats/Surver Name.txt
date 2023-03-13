@@ -1,0 +1,28 @@
+SURVER NAME
+
+DESKTOP-LLKQ9MN
+
+
+
+Patern
+@"Server={Bace Name rom MSM Studio};Database={database Name};Integrated Security=true{lokal user profil};TrustServerCertificate=True;"
+
+
+@"Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True;"
+
+
+
+
+
+VS entity nugets
+
+tipe in Package manager console
+
+
+scaffold-dbcontext 'Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True' Microsoft.EntityFrameworkCore.SQLServer -DataAnnotations
+
+
+
+in Folders Data and Models
+
+scaffold-dbcontext 'Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True' Microsoft.EntityFrameworkCore.SQLServer -DataAnnotations -ContextDir Data -OutputDir Models

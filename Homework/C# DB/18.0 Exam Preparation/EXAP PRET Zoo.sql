@@ -7,6 +7,12 @@ USE Zoo
 
 GO
 
+
+--- PRIMARY KEY - PK, UNIQUE, NOT NULL
+--- IDENTITY - auto-incremented ID avtomatichno popalvane
+--- FOREING KEY - RELATIONSHIP whit a table
+--- All colums exept PK is NULL by default
+
 CREATE TABLE Owners
 		(
 			[Id] INT PRIMARY KEY IDENTITY, --- PK, Unique table identification, Identity- auto incremented(populvane)  Null is not allowed
@@ -119,26 +125,27 @@ DELETE FROM VolunteersDepartments1
 
 
 ----- Section 3. Querying 
-
-
 -- Volunteers
-SELECT Name, PhoneNumber, Address, AnimalId, DepartmentId
-	FROM Volunteers
-	ORDER BY Name,   -- (ascending) ASC ,  DESC
-			AnimalId,
-			DepartmentId
+SELECT [Name],
+	PhoneNumber,
+	[Address],
+	AnimalId,
+	DepartmentId,
+FROM Volunteers
+ORDER BY [Name], -- (ascending) ASC ,  DESC
+		 AnimalId,
+		 DepartmentId
 
 --- Animals data
-
 SELECT a.Name,
-		a.AnimalType,
+		[at].AnimalType,
 		FORMAT(a.BirthDate, 'dd.MM.yyyy')
-		AS	BirthDate
+		AS	BirthDate  --- NEW COLUME NAME
 		FROM Animals
 		AS a
-INNER JOIN AnimalTypes
-		AS anty
-		ON a.AnimalTypeId = anty.Id
+INNER JOIN AnimalTypes -- or left insted of INNER JOIN
+		AS [at]
+		ON a.AnimalTypeId = [at].Id
 	ORDER BY a.Name
 
 
