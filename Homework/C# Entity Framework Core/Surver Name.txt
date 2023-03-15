@@ -19,16 +19,30 @@ VS entity nugets
 tipe in Package manager console
 
 
-scaffold-dbcontext -Connection "Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True" 
--Provider Microsoft.EntityFrameworkCore.SQLServer 
--DataAnnotations
+scaffold-dbcontext 'Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True' Microsoft.EntityFrameworkCore.SQLServer -DataAnnotations
 
 
 
-in Folders Data and Models !!!
-in Data folder onli ....Context.cs
-in Models all other but up in the projekt
+in Folders Data and Models
 
-scaffold-dbcontext -Connection "Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True"
- -Provider Microsoft.EntityFrameworkCore.SQLServer  
- -OutputDir Data/Models
+scaffold-dbcontext 'Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True' Microsoft.EntityFrameworkCore.SQLServer -DataAnnotations -ContextDir Data -OutputDir Models
+
+
+
+
+
+Migrations!!!!
+
+
+
+Add-Migration Initial
+
+
+Update-Database
+
+
+Remove-Migration
+
+
+
+

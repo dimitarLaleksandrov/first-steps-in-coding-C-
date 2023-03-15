@@ -20,10 +20,9 @@
             // The code after materialization is executed locally on the machine in RAM
             using var dbContext = new BookShopContext();
             //DbInitializer.ResetDatabase(dbContext);
-
-            string input = Console.ReadLine();
+            int input = int.Parse(Console.ReadLine());
             //Stopwatch sw = Stopwatch.StartNew();
-            var result =  GetBooksByAgeRestriction(dbContext, input);
+            var result = GetBooksNotReleasedIn(dbContext, input);
             //sw.Stop();
             //Console.WriteLine(sw.ElapsedMilliseconds);
 
@@ -62,7 +61,30 @@
 
             return string.Join(Environment.NewLine, bookTitles);
         }
+        // Problem 04
+        public static string GetBooksByPrice(BookShopContext dbContext)
+        {
+            string[] bookTitel = dbContext.Books
+                .Where(b => b.Price > 40)
+                .OrderByDescending(b => b.Price)
+                .Select(b => $"{b.Title} - ${b.Price}")
+                .ToArray();
 
+            return string.Join(Environment.NewLine, bookTitel);
+        }
+
+        // Problem 05
+        public static string GetBooksNotReleasedIn(BookShopContext dbContext, int year)
+        {
+            string[] bookThatAreNotRealease = dbContext.Books
+                .Where(b => b.ReleaseDate!.Value.Year != year)
+                .OrderBy(b => b.BookId)
+                .Select(b => b.Title)
+                .ToArray();
+
+            return string.Join(Environment.NewLine, bookThatAreNotRealease);
+
+        }
         // Problem 06
         public static string GetBooksByCategory(BookShopContext dbContext, string input)
         {
@@ -156,7 +178,7 @@
                         .Select(cb => new
                         {
                             BookTitle = cb.Book.Title,
-                            ReleaseYear = cb.Book.ReleaseDate.Value.Year
+                            ReleaseYear = cb.Book.ReleaseDate!.Value.Year
                         })
                         .ToArray()
                 })
