@@ -33,6 +33,8 @@ scaffold-dbcontext 'Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=
 
 Migrations!!!!
 
+// Add-migation Fix"name of the migation"
+
 
 
 Add-Migration Initial
