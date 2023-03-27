@@ -18,9 +18,9 @@
             // XmlSerializer
             using CarDealerContext context = new CarDealerContext();
             string inputXml = 
-                File.ReadAllText("../../../Datasets/parts.xml");
+                File.ReadAllText("../../../Datasets/cars.xml");
 
-            string result = ImportParts(context, inputXml);
+            string result = ImportCars(context, inputXml);
             Console.WriteLine(result);
 
             // Old way in EF Core
