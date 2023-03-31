@@ -26,7 +26,17 @@
             StringBuilder sb = new StringBuilder();
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(ImportCoachesDto[]), new XmlRootAttribute("Coaches"));
             using StringReader xmlReader = new StringReader(xmlString);
-            ImportCoachesDto[] coachDtos = (ImportCoachesDto[])xmlSerializer.Deserialize(xmlReader)!;
+            ImportCoachesDto[] coachDtos = new ImportCoachesDto[0];
+            try
+            { 
+                var test = (ImportCoachesDto[])xmlSerializer.Deserialize(xmlReader)!;
+                coachDtos = test;
+            }
+            catch (Exception e)
+            {
+                var test = e;
+                throw;
+            }         
             HashSet<Coach> coaches = new HashSet<Coach>();
             foreach (var cDto in coachDtos)
             {
@@ -34,17 +44,7 @@
                 {
                     sb.AppendLine(ErrorMessage);
                     continue;
-                }
-                if (cDto.Name.IsNullOrEmpty())
-                {
-                    sb.AppendLine(ErrorMessage);
-                    continue;
-                }
-                if (cDto.Nationality.IsNullOrEmpty())
-                {
-                    sb.AppendLine(ErrorMessage);
-                    continue;
-                }
+                }           
                 Coach coach = new Coach() 
                 { 
                     Name = cDto.Name,
@@ -57,16 +57,10 @@
                         sb.AppendLine(ErrorMessage);
                         continue;
                     }
-                    if (fDto.Name.IsNullOrEmpty())
-                    {
-                        sb.AppendLine(ErrorMessage);
-                        continue;
-                    }
-                    DateTime fContractStartDate;
                     bool isFContractStartDate = DateTime.TryParseExact(fDto.ContractStartDate,
                         "dd/MM/yyyy", CultureInfo.InvariantCulture,
                         DateTimeStyles.None,
-                        out fContractStartDate);
+                        out DateTime fContractStartDate);
                     if (!isFContractStartDate)
                     {
                         sb.AppendLine(ErrorMessage);
@@ -101,7 +95,7 @@
                 sb.AppendLine(string.Format(SuccessfullyImportedCoach, coach.Name, coach.Footballers.Count));
 
             }
-            context.Coaches.AddRange(coaches);
+            context.CoachesSecond.AddRange(coaches);
             context.SaveChanges();
             return sb.ToString().TrimEnd();
         }
@@ -118,31 +112,15 @@
                     sb.AppendLine(ErrorMessage);
                     continue;
                 }
-                if (tDto.Name.IsNullOrEmpty())
-                {
-                    sb.AppendLine(ErrorMessage);
-                    continue;
-                }
-                if (tDto.Nationality.IsNullOrEmpty())
-                {
-                    sb.AppendLine(ErrorMessage);
-                    continue;
-                }
-                if (tDto.Trophies <= 0)
-                {
-                    sb.AppendLine(ErrorMessage);
-                    continue;
-                }
                 Team team = new Team() 
                 {
                     Name = tDto.Name,
                     Nationality = tDto.Nationality,
-                    Trophies = tDto.Trophies,
-                
+                    Trophies = tDto.Trophies               
                 };
-                foreach (var f in tDto.Footballers.Distinct()) 
+                foreach (var footballerId in tDto.Footballers.Distinct()) 
                 {
-                    Footballer footballer = context.Footballers.Find(f);
+                    Footballer footballer = context.Footballers.Find(footballerId);
                     if (footballer == null)
                     {
                         sb.AppendLine(ErrorMessage);
@@ -160,7 +138,7 @@
             context.SaveChanges();
             return sb.ToString().TrimEnd();
         }
-
+        
         private static bool IsValid(object dto)
         {
             var validationContext = new ValidationContext(dto);

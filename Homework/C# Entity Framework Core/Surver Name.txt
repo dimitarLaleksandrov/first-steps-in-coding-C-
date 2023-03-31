@@ -1,4 +1,19 @@
+SURVER CONNECTIONS
+
+https://www.connectionstrings.com/sql-server-2019/
+
+
+SCHOOLS INFO FRO CODING
+
+https://www.w3schools.com/sql/default.asp
+
+
+
+
+
 SURVER NAME
+
+
 
 DESKTOP-LLKQ9MN
 
@@ -25,9 +40,13 @@ scaffold-dbcontext 'Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=
 
 in Folders Data and Models
 
-scaffold-dbcontext 'Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True' Microsoft.EntityFrameworkCore.SQLServer -DataAnnotations -ContextDir Data -OutputDir Models
+scaffold-dbcontext 'Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True'
 
 
+ Microsoft.EntityFrameworkCore.SQLServer -DataAnnotations -ContextDir Data -OutputDir Models
+
+
+DESKTOP-LLKQ9MN
 
 
 

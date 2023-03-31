@@ -1,4 +1,6 @@
-﻿namespace Footballers.DataProcessor
+﻿using Footballers.Data.Models;
+
+namespace Footballers.DataProcessor
 {
     using AutoMapper.QueryableExtensions;
     using AutoMapper;
@@ -8,6 +10,7 @@
     using Footballers.DataProcessor.ExportDto;
     using Newtonsoft.Json;
     using System.Globalization;
+    using Microsoft.EntityFrameworkCore;
 
     public class Serializer
     {
@@ -28,47 +31,52 @@
 
             using StringWriter sw = new StringWriter(sb);
 
-            ExportCoachDto[] coachDtos = context
+            var coaches = context
                 .Coaches
+                //.Include(c => c.Footballers)
                 .Where(c => c.Footballers.Any())
-                .ProjectTo<ExportCoachDto>(config)
-                .OrderByDescending(c => c.FootballersCount)
+                .OrderByDescending(c => c.Footballers.Count)
                 .ThenBy(c => c.Name)
                 .ToArray();
-            xmlSerializer.Serialize(sw, coachDtos, namespaces);
+            var coachesDtos = coaches.Select(c => mapper.Map<ExportCoachDto>(c)).ToArray();
+            xmlSerializer.Serialize(sw, coachesDtos, namespaces);
             return sb.ToString().TrimEnd();
         }
 
         public static string ExportTeamsWithMostFootballers(FootballersContext context, DateTime date)
         {
-            var teams = context
-                .Teams
-                .Where(t => t.TeamsFootballers.Any(tf => tf.Footballer.ContractStartDate >= date))
-                .ToArray()
-                .Select(t => new
-                {
-                    t.Name,
-                    Footballers = t.TeamsFootballers
-                        .Where(tf => tf.Footballer.ContractStartDate >= date)
-                        .ToArray()
-                        .OrderByDescending(tf => tf.Footballer.ContractEndDate)
-                        .ThenBy(tf => tf.Footballer.Name)
-                        .Select(tf => new
-                        {
-                            FootballerName = tf.Footballer.Name,
-                            ContractStartDate = tf.Footballer.ContractStartDate.ToString("d", CultureInfo.InvariantCulture),
-                            ContractEndDate = tf.Footballer.ContractEndDate.ToString("d", CultureInfo.InvariantCulture),
-                            BestSkillType = tf.Footballer.BestSkillType.ToString(),
-                            PositionType = tf.Footballer.PositionType.ToString()
-                        })
-                        .ToArray()
-                })
-                .OrderByDescending(t => t.Footballers.Length)
-                .ThenBy(t => t.Name)
-                .Take(5)
-                .ToArray();
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile<FootballersProfile>();
+            });
+            var mapper = new Mapper(config);
 
+            var teams = context.Teams
+                .Where(t => t.TeamsFootballers.Any(f => f.Footballer.ContractStartDate >= date))
+                .ToArray()
+                .Select(t =>
+                {
+                    t.TeamsFootballers = t.TeamsFootballers.Where(f => f.Footballer.ContractStartDate >= date).ToList();
+                    var dto = mapper.Map<ExportTeamDto>(t);
+                    return dto;
+
+                 })
+                .OrderByDescending(x => x.Footballers.Count())
+                .ThenBy(t => t.Name)
+                .Take(5);
+                            
             return JsonConvert.SerializeObject(teams, Formatting.Indented);
         }
+        //var text = "Select the top 5 teams that have at least one footballer " +
+        //    "that their contract start date is higher or equal to the given date. " +
+        //    "Select them with their footballers who meet the same criteria " +
+        //    "(their contract start date is after or equals the given date). " +
+        //    "For each team, export their name and their footballers. " +
+        //    "For each footballer, export their name and contract start date " +
+        //    "(must be in format \"d\"), contract end date (must be in format \"d\"), " +
+        //    "position and best skill type. Order the footballers by contract end date (descending), " +
+        //    "then by name (ascending). Order the teams by all footballers (meeting above condition) count (descending), " +
+        //    "then by name (ascending).";
     }
 }
+

@@ -15,6 +15,7 @@
 
         public string Name { get; set; }
 
+        [Required]
         [XmlElement("Nationality")]
         public string Nationality { get; set; }
 

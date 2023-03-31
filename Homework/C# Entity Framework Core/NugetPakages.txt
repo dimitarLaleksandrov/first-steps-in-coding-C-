@@ -8,3 +8,9 @@ Microsoft.EntityFrameworkCore.Tools
 
 Microsoft.EntityFrameworkCore.Design
 
+Microsoft.EntityFrameworkCore.Proxies
+
+AutoMapper
+
+Newtonsoft.Json
+

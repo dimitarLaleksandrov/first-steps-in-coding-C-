@@ -21,7 +21,7 @@ namespace Footballers.Data.Models
 
         [Required]
         [StringLength(40, MinimumLength = 2)]
-        public string Name { get; set; } = null!;
+        public string Name { get; set; }
 
         [Required]
         public virtual DateTime ContractStartDate { get; set; }

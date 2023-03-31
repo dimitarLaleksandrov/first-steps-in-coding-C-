@@ -126,7 +126,7 @@
 
             List<Team> teams = new List<Team>();
 
-            foreach (ImportTeamDto teamDto in teamDtos)
+            foreach (var teamDto in teamDtos)
             {
                 if (!IsValid(teamDto))
                 {

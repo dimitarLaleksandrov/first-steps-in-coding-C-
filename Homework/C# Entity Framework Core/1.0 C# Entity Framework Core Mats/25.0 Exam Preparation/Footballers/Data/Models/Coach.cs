@@ -20,7 +20,8 @@
         [MaxLength(GlobalConstants.CoachNameMaxLength)]
         public string Name { get; set; }
 
-        public string Nationality { get; set; }
+        [Required]
+        public string Nationality { get; set; } = null!;
 
         public ICollection<Footballer> Footballers { get; set; }
     }

@@ -15,14 +15,13 @@
         { 
 
         }
-        public DbSet<Team> Teams { get; set; }
+        public DbSet<Team> TeamsSecond { get; set; }
 
-        public DbSet<Footballer> Footballers { get; set; }
+        public DbSet<Footballer> FootballersSecond { get; set; }
 
-        public DbSet<Coach> Coaches { get; set; }
+        public DbSet<Coach> CoachesSecond { get; set; }
 
-        public DbSet<TeamFootballer> TeamsFootballers { get; set; }
-
+        public DbSet<TeamFootballer> TeamsFootballersSecond { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

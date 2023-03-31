@@ -1,0 +1,146 @@
+[
+  {
+    "Name": "Manchester City F.C.",
+    "Footballers": [
+      {
+        "FootballerName": "Erling Haland",
+        "ContractStartDate": "7/24/2020",
+        "ContractEndDate": "6/28/2025",
+        "PositionType": "Forward",
+        "BestSkillType": "Shoot"
+      },
+      {
+        "FootballerName": "Marco Reus",
+        "ContractStartDate": "6/8/2020",
+        "ContractEndDate": "5/13/2025",
+        "PositionType": "Midfielder",
+        "BestSkillType": "Pass"
+      },
+      {
+        "FootballerName": "Nico Schlotterbeck",
+        "ContractStartDate": "7/25/2020",
+        "ContractEndDate": "3/21/2025",
+        "PositionType": "Defender",
+        "BestSkillType": "Defence"
+      },
+      {
+        "FootballerName": "Jan Oblak",
+        "ContractStartDate": "6/9/2020",
+        "ContractEndDate": "2/3/2025",
+        "PositionType": "Goalkeeper",
+        "BestSkillType": "Defence"
+      },
+      {
+        "FootballerName": "Bruno Guimaraes",
+        "ContractStartDate": "6/21/2020",
+        "ContractEndDate": "7/30/2024",
+        "PositionType": "Midfielder",
+        "BestSkillType": "Dribble"
+      }
+    ]
+  },
+  {
+    "Name": "Paris Saint-Germain F.C.",
+    "Footballers": [
+      {
+        "FootballerName": "Harry Kane",
+        "ContractStartDate": "12/29/2021",
+        "ContractEndDate": "2/6/2026",
+        "PositionType": "Forward",
+        "BestSkillType": "Shoot"
+      },
+      {
+        "FootballerName": "Karim Benzema",
+        "ContractStartDate": "6/17/2020",
+        "ContractEndDate": "5/22/2025",
+        "PositionType": "Forward",
+        "BestSkillType": "Shoot"
+      },
+      {
+        "FootballerName": "Hugo Lloris",
+        "ContractStartDate": "6/10/2020",
+        "ContractEndDate": "7/19/2024",
+        "PositionType": "Goalkeeper",
+        "BestSkillType": "Defence"
+      },
+      {
+        "FootballerName": "Son Heung-Min",
+        "ContractStartDate": "6/18/2020",
+        "ContractEndDate": "1/9/2024",
+        "PositionType": "Forward",
+        "BestSkillType": "Speed"
+      }
+    ]
+  },
+  {
+    "Name": "Liverpool F.C.",
+    "Footballers": [
+      {
+        "FootballerName": "Alisson",
+        "ContractStartDate": "1/1/2022",
+        "ContractEndDate": "8/28/2026",
+        "PositionType": "Goalkeeper",
+        "BestSkillType": "Defence"
+      },
+      {
+        "FootballerName": "Sadio Mane",
+        "ContractStartDate": "6/8/2020",
+        "ContractEndDate": "2/2/2025",
+        "PositionType": "Forward",
+        "BestSkillType": "Shoot"
+      },
+      {
+        "FootballerName": "Andrew Robertson",
+        "ContractStartDate": "6/13/2021",
+        "ContractEndDate": "11/30/2023",
+        "PositionType": "Defender",
+        "BestSkillType": "Pass"
+      }
+    ]
+  },
+  {
+    "Name": "Olympique Lyonnais",
+    "Footballers": [
+      {
+        "FootballerName": "Sofiane Boufal",
+        "ContractStartDate": "6/13/2021",
+        "ContractEndDate": "7/22/2025",
+        "PositionType": "Midfielder",
+        "BestSkillType": "Pass"
+      },
+      {
+        "FootballerName": "Bremer",
+        "ContractStartDate": "7/27/2020",
+        "ContractEndDate": "9/4/2024",
+        "PositionType": "Defender",
+        "BestSkillType": "Defence"
+      },
+      {
+        "FootballerName": "Patrik Schick",
+        "ContractStartDate": "6/6/2020",
+        "ContractEndDate": "11/23/2022",
+        "PositionType": "Forward",
+        "BestSkillType": "Shoot"
+      }
+    ]
+  },
+  {
+    "Name": "Juventus F.C.",
+    "Footballers": [
+      {
+        "FootballerName": "Lorenzo Pellegrini",
+        "ContractStartDate": "12/30/2021",
+        "ContractEndDate": "6/17/2024",
+        "PositionType": "Midfielder",
+        "BestSkillType": "Pass"
+      },
+      {
+        "FootballerName": "Martin Terrier",
+        "ContractStartDate": "12/29/2021",
+        "ContractEndDate": "6/16/2024",
+        "PositionType": "Forward",
+        "BestSkillType": "Pass"
+      }
+    ]
+  }
+]

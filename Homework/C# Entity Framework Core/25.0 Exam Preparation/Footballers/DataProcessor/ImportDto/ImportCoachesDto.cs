@@ -9,6 +9,7 @@ using System.Xml.Serialization;
 
 namespace Footballers.DataProcessor.ImportDto
 {
+    [XmlType("Coach")]
     public class ImportCoachesDto
     {
         [Required]

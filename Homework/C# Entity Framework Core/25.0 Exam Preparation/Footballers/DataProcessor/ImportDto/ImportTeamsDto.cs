@@ -20,6 +20,7 @@ namespace Footballers.DataProcessor.ImportDto
         public string Nationality { get; set; } = null!;
 
         [Required]
+        [Range(1, int.MaxValue)]
         public int Trophies { get; set; }
 
         public virtual int[] ?Footballers { get; set; }

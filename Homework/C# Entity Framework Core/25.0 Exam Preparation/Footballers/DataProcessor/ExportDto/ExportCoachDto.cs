@@ -7,6 +7,7 @@ using System.Xml.Serialization;
 
 namespace Footballers.DataProcessor.ExportDto
 {
+    [XmlType("Coach")]
     public class ExportCoachDto
     {
         [XmlElement("CoachName")]
