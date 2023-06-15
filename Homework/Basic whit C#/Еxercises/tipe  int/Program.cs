@@ -7,6 +7,7 @@ namespace tipe__int
         static void Main(string[] args)
         {
             int number = 0x100;
+            Console.WriteLine( number);
         }
     }
 }

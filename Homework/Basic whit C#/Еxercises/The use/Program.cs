@@ -8,6 +8,7 @@ namespace The_use
         {
             string a = "The \"use\" of quotations causes difficulties ";
             string b = "The + \"use\" + of quotations causes difficulties";
+            Console.WriteLine(b);
         }
     }
 }

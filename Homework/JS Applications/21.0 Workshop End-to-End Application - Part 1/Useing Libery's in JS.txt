@@ -1,0 +1,10 @@
+	IN TERMINAL
+
+TYPE
+
+npm init -y
+
+
+TYPE
+
+npm i page lit-htmL
