@@ -107,6 +107,7 @@ namespace Library.Controllers
             return View(book);
         }
 
+        [HttpPost]
         public async Task<IActionResult> Edit(int id, AddBookViewModel model)
         {
             decimal raiting;

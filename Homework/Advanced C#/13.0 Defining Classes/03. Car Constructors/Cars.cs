@@ -8,7 +8,7 @@ namespace _03._Car_Constructors
 {
     internal class Cars
     {
-        public Cars(string)
+        public Cars()
         {
 
         }

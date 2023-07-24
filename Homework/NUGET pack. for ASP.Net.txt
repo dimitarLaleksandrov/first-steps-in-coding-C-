@@ -1,0 +1,189 @@
+  surv autorization        --------      'Server=DESKTOP-LLKQ9MN;Database=;Integrated Security=true;TrustServerCertificate=True;'
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+EF Core support to a project in Visual Studio   ------  Microsoft.EntityFrameworkCore   ->   .App and .Data
+   
+
+
+EF Core is modular – any data providers  ------     Microsoft.EntityFrameworkCore.SqlServer  ->   .App and .Data
+
+
+
+                                      ------  Microsoft.EntityFrameworkCore.Tools   ->   .App and .Data
+
+
+
+Entity Framework Core CLI tools   ------  Microsoft.EntityFrameworkCore.Design     ->   .App and .Data
+
+
+				----------    Microsoft.AspNetCore.Identity.UI   -> app Identity
+
+
+                               ---------      Microsoft.AspNetCore.Identity.EntityFrame   -> app Identity
+
+
+instal on Onli progekt not all solution evri time wen u strat new one
+
+
+
+Microsoft.EntityFrameworkCore.SqlServer
+
+Microsoft.EntityFrameworkCore.Tools 
+
+Microsoft.EntityFrameworkCore.Design
+
+Microsoft.EntityFrameworkCore.Proxies
+
+AutoMapper
+
+Newtonsoft.Json
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+SURVER CONNECTIONS
+
+https://www.connectionstrings.com/sql-server-2019/
+
+
+SCHOOLS INFO FRO CODING
+
+https://www.w3schools.com/sql/default.asp
+
+
+
+
+
+SURVER NAME
+
+
+
+DESKTOP-LLKQ9MN
+
+
+
+Patern
+@"Server={Bace Name rom MSM Studio};Database={database Name};Integrated Security=true{lokal user profil};TrustServerCertificate=True;"
+
+
+@"Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True;"
+
+
+
+
+
+VS entity nugets
+
+tipe in Package manager console
+
+
+scaffold-dbcontext 'Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True' Microsoft.EntityFrameworkCore.SQLServer -DataAnnotations
+
+
+
+in Folders Data and Models
+
+
+
+scaffold-dbcontext 'Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True'
+
+
+
+
+Microsoft.EntityFrameworkCore.SQLServer -DataAnnotations -ContextDir Data -OutputDir Models
+
+
+DESKTOP-LLKQ9MN
+
+
+
+
+
+
+Migrations!!!!
+
+
+//for migration to initial
+
+Microsoft.EntityFrameworkCore.Tools
+
+
+// Add-migration Fix"name of the migration"
+
+
+
+Add-Migration CreateAndSeedDb -OutputDir Data/Migrations  <---- last is the path
+
+
+
+Add-Migration Initial
+
+
+Update-Database
+
+
+Remove-Migration
+
+
+
+///script
+
+script-migration
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+                          
+
+
+
+
+
+
+Migration!!!!!
+
+
+
+Add-Migration Initial
+
+
+
+Add-Migration CustomTablesAdded
+
+
+
+
+
+Add-Migration CreateAndSeedDb -OutputDir Data/Migrations  <---- last is the path
+
+
+Add-Migration SeedData
+
+
+
+
+Update-Database
+
+
+Remove-Migration
+
+
+
+///script
+
+script-migration
+
+
+
