@@ -1,0 +1,34 @@
+<div class="kutiiki">
+  <a href="/World-of-Warcraft"> 
+    <div class="kartinka">
+    <img src="https://imguscdn.gamespress.com/cdn/files/BlizzardLive/2022/04/140239-5225ae49/WoW_Dragonflight_Logo_4K.png?w=250&amp;mode=max&amp;otf=y&amp;quality=90&amp;format=png&amp;bgcolor=transparent&amp;ex=2023-09-01+03%3A00%3A00&amp;sky=ef16870abe7b6ce243c72001d9cad22101139896a63621911edb3f30876fe3c3">
+	</div>
+  </a>
+  <div class="dumichki">Word Of Warcraft</div>
+</div>
+
+
+
+div.kutiiki {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+
+div.dumichki {
+    padding: 15px;
+    text-align: center;
+    background-color: blue;
+    height: 30px;
+}
+
+
+div.kartinka {
+    background-color: black;
+    height: 120px;
+
+
+div.kutiiki img {
+    width: 100%;
+    height: auto;
+}

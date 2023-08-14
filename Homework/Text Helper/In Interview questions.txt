@@ -1,0 +1,7 @@
+principi na OOP
+
+SOLID
+
+POLIMORFISUM
+
+DATA STRUCHCHERS
