@@ -1,9 +1,10 @@
-﻿namespace HouseRentingSystem.Web.Controllers
+?namespace HouseRentingSystem.Web.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
 
     using Services.Data.Interfaces;
     using ViewModels.Home;
+    using static Common.GeneralApplicationConstants;
 
     public class HomeController : Controller
     {
@@ -16,6 +17,11 @@
 
         public async Task<IActionResult> Index()
         {
+            if (this.User.IsInRole(AdminRoleName))
+            {
+                return this.RedirectToAction("Index", "Home", new { Area = AdminAreaName });
+            }
+
             IEnumerable<IndexViewModel> viewModel =
                 await houseService.LastThreeHousesAsync();
 

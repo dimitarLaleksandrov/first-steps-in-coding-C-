@@ -1,13 +1,15 @@
-﻿namespace HouseRentingSystem.Web.Controllers
+?namespace HouseRentingSystem.Web.Controllers
 {
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
 
     using Infrastructure.Extensions;
+    using Microsoft.Extensions.Caching.Memory;
     using Services.Data.Interfaces;
     using Services.Data.Models.House;
     using ViewModels.House;
 
+    using static Common.GeneralApplicationConstants;
     using static Common.NotificationMessagesConstants;
 
     [Authorize]
@@ -18,13 +20,17 @@
         private readonly IHouseService houseService;
         private readonly IUserService userService;
 
+        private readonly IMemoryCache memoryCache;
+
         public HouseController(ICategoryService categoryService, IAgentService agentService,
-            IHouseService houseService, IUserService userService)
+            IHouseService houseService, IUserService userService, IMemoryCache memoryCache)
         {
             this.categoryService = categoryService;
             this.agentService = agentService;
             this.houseService = houseService;
             this.userService = userService;
+
+            this.memoryCache = memoryCache;
         }
 
         [HttpGet]
@@ -340,6 +346,11 @@
         [HttpGet]
         public async Task<IActionResult> Mine()
         {
+            if (this.User.IsInRole(AdminRoleName))
+            {
+                return this.RedirectToAction("Mine", "House", new { Area = AdminAreaName });
+            }
+
             List<HouseAllViewModel> myHouses =
                 new List<HouseAllViewModel>();
 
@@ -422,6 +433,8 @@
                 return GeneralError();
             }
 
+            this.memoryCache.Remove(RentsCacheKey);
+
             return RedirectToAction("Mine", "House");
         }
 
@@ -463,6 +476,8 @@
             {
                 return GeneralError();
             }
+
+            this.memoryCache.Remove(RentsCacheKey);
 
             return RedirectToAction("Mine", "House");
         }

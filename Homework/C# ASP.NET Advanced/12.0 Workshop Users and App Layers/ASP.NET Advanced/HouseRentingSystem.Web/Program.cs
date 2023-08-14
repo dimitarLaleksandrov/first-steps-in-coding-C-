@@ -47,9 +47,13 @@ namespace HouseRentingSystem.Web
 
             builder.Services.AddRecaptchaService();
 
+            builder.Services.AddMemoryCache();
+            builder.Services.AddResponseCaching();
+
             builder.Services.ConfigureApplicationCookie(cfg =>
             {
                 cfg.LoginPath = "/User/Login";
+                cfg.AccessDeniedPath = "/Home/Error/401";
             });
 
             builder.Services
@@ -81,9 +85,13 @@ namespace HouseRentingSystem.Web
             app.UseStaticFiles();
 
             app.UseRouting();
+            
+            app.UseResponseCaching();
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.EnableOnlineUsersCheck();
 
             if (app.Environment.IsDevelopment())
             {
@@ -93,10 +101,17 @@ namespace HouseRentingSystem.Web
             app.UseEndpoints(config =>
             {
                 config.MapControllerRoute(
+                    name: "areas",
+                    pattern: "/{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                );
+
+                config.MapControllerRoute(
                     name: "ProtectingUrlRoute",
                     pattern: "/{controller}/{action}/{id}/{information}",
                     defaults: new { Controller = "Category", Action = "Details" });
+
                 config.MapDefaultControllerRoute();
+
                 config.MapRazorPages();
             });
 
