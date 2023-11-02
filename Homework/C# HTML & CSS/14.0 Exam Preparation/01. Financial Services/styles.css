@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 12px/1.5 Poppins, sans-serif;
+}
+
+body {
+    padding: 2em;
+}
+
+.container {
+    max-width: 100em;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section-header {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.section-header h2 span {
+    color: #327dc4;
+}
+
+.section-content {
+    display: flex;
+    gap: 1.6em;
+}
+
+.section-content article .entry-content {
+    padding: 1.6em;
+}
+
+.section-content article .entry-content p {
+    margin: 1em 0 1em 0;
+}
+
+.section-content article,
+.section-content article .media {
+    display: block;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.section-content article {
+    flex: 1 1 30%;
+    background: #819daf;
+    color: black;
+}
+
+.section-content article .button {
+    color: white;
+    display: inline-block;
+    font-display: none;
+    background: #327dc4;
+    border: 1px solid #323cc4;
+    outline: 1px solid #fff;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+}
+
+
+/*if the button is on raith 
+
+
+.section-content article .button{
+    display: block; !!!
+    align-self: flex end;
+}
+
+.section-content article .entry-content {
+    display: flex; !!
+    flex-direction: column; !!
+    align-items: flex-start; !!
+
+}
+
+*/

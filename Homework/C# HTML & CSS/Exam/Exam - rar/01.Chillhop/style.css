@@ -1,0 +1,57 @@
+html{
+    font: 12px/1.5 Helvetica, sans-serif;
+}
+
+.container{
+    background-color: #1881b6;
+    margin: 3em;
+    border: solid 0.5em;
+    border-radius: 1em;
+    display: flex;
+    padding: 3em;
+}
+
+article{
+    max-width: 60%;
+    margin-right: 4em
+}
+
+img{
+    max-width: 35%;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+h3{
+    color: white;
+    font-size: 4em;
+}
+
+p{
+    font-size: 1.5em;
+    text-indent: 3em;
+    line-height: 1.9em;
+}
+
+.button-container{
+    display: flex;
+    gap: 12em;
+    justify-content: center;
+}
+
+.button{
+    font-size: 2em;
+    border: solid 0.1em black;
+    border-radius: 0.3em;
+    color: black;
+    text-decoration: none;
+    padding: 0.4em 1.4em;
+    font-weight: bold;
+}
+
+.button.sales{
+    background-color: #ba4773;
+    color: white;
+}
