@@ -1,0 +1,42 @@
+regex101    !!!!!!
+https://regexr.com/ 
+https://regex101.com/
+
+[word]
+[A-Z]
+[a-z]
+[0-9]
+
+
+\w   ->   [A-Z] [a-z] [0-9] _
+\W   ->   opposite \w
+\s   ->  " "
+\S   ->  opposite \s
+\d   ->   [0-9]
+\D   ->   opposite \d
+
+
+\+\d*  ->   +35957863678001 a+d  ->  +35957863678001  +
+\+\d+  ->   +35957863678001 a+d  ->  +35957863678001
+\+\d?  ->   +35957863678001 a+d  ->  +3  +
+
+
+\+\d{4} -> + 4 digits
+\+\d{1,4} -> + detween 1 and 4 digits
+\+\d{4,}  -> + at 4 digit to above
+
+
+()  ->  create groups
+
+(?:)  -> non capture group
+(?<name>)  ->  groupe name
+
+\g<name>  -> reuse groups
+ 
+^  ->  at the start 
+$  - > to the end
+
+
+\1  ->  copy first group
+\n - > copy n groups
+ 

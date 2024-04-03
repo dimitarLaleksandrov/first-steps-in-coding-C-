@@ -1,0 +1,25 @@
+Pattern	Description
+
+\b  -   Start the match at a word boundary.
+(?<word>\w+)   -  Match one or more word characters up to a word boundary. Name this captured group word.
+\s+  -  Match one or more white-space characters.
+(\k<word>)   -   Match the captured group that is named word.
+\b   -   Match a word boundary.
+
+
+Regex rx = new Regex(@"\b(?<word>\w+)\s+(\k<word>)\b",
+
+
+Pattern	Description
+
+^	Start at the beginning of the string.
+\s*	Match zero or more white-space characters.
+[\+-]?	Match zero or one occurrence of either the positive sign or the negative sign.
+\s?	Match zero or one white-space character.
+\$?	Match zero or one occurrence of the dollar sign.
+\s?	Match zero or one white-space character.
+\d*	Match zero or more decimal digits.
+\.?	Match zero or one decimal point symbol.
+\d{2}?	Match two decimal digits zero or one time.
+(\d*\.?\d{2}?){1}	Match the pattern of integral and fractional digits separated by a decimal point symbol at least one time.
+$   Match the end of the string.

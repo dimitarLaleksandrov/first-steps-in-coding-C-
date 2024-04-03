@@ -1,0 +1,7 @@
+Operator	Name	Description	Example (a = 0, b = 1)
+&	Bitwise AND  -  It compares each bit of the first operand with the corresponding bit of its second operand. If both bits are 1, then the result bit will be 1; otherwise, the result will be 0.	a & b (0)
+|	Bitwise OR	 -  It compares each bit of the first operand with the corresponding bit of its second operand. If either of the bit is 1, then the result bit will be 1; otherwise, the result will be 0.	a | b (1)
+^	Bitwise Exclusive OR (XOR) -  It compares each bit of the first operand with the corresponding bit of its second operand. If one bit is 0 and the other bit is 1, then the result bit will be 1; otherwise, the result will be 0.	a ^ b (1)
+~	Bitwise Complement  -  It operates on only one operand, and it will invert each bit of operand. It will change bit 1 to 0 and vice versa.	~(a) (1)
+<<	Bitwise Left Shift)  -  It shifts the number to the left based on the specified number of bits. The zeroes will be added to the least significant bits.	b << 2 (100)
+>>	Bitwise Right Shift  -   It shifts the number to the right based on the specified number of bits. The zeroes will be added to the least significant bits.	b >> 2 (001)
