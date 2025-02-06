@@ -15,7 +15,7 @@ SURVER NAME
 
 
 
-DESKTOP-LLKQ9MN
+INGEN
 
 
 
@@ -46,7 +46,7 @@ scaffold-dbcontext 'Server=DESKTOP-LLKQ9MN;Database=SoftUni;Integrated Security=
  Microsoft.EntityFrameworkCore.SQLServer -DataAnnotations -ContextDir Data -OutputDir Models
 
 
-DESKTOP-LLKQ9MN
+INGEN
 
 
 

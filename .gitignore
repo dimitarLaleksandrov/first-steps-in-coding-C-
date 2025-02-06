@@ -348,3 +348,15 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/Homework/DevOps CONTAINERS AND CLOUD/13.0 Exam Preparation/11-Exam-Preparation-Resources/Terraform/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.0.1/windows_386/terraform-provider-azurerm_v3.0.1_x5.exe
+/Homework/DevOps CONTAINERS AND CLOUD/12-Exam-Preparation-Resources/Terraform/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.91.0/windows_386/terraform-provider-azurerm_v3.91.0_x5.exe
+/Homework/DevOps CONTAINERS AND CLOUD/14.0 Exam Preparation/12-Exam-Preparation-Resources/12-Exam-Preparation-Resources/Task 3/Alerting/alertmanager-0.27.0-rc.0.windows-amd64/amtool.exe
+/Homework/DevOps CONTAINERS AND CLOUD/14.0 Exam Preparation/12-Exam-Preparation-Resources/12-Exam-Preparation-Resources/Task 3/Alerting/prometheus-2.50.0-rc.0.windows-amd64/prometheus.exe
+/Homework/DevOps CONTAINERS AND CLOUD/14.0 Exam Preparation/12-Exam-Preparation-Resources/12-Exam-Preparation-Resources/Task 3/Alerting/prometheus-2.50.0-rc.0.windows-amd64/promtool.exe
+/Homework/DevOps for Developers - CONTAINERS AND CLOUD/13.0 Exam Preparation/11-Exam-Preparation-Resources/Task 3/alertmanager-0.27.0-rc.0.windows-amd64/amtool.exe
+*.exe
+Homework/DevOps for Developers - Software Engineering and DevOps/
+Homework/DevOps for Developers - CONTAINERS AND CLOUD/
+Homework/DevOpsSoftware Engineering and DevOps/
+Homework/DevOps CONTAINERS AND CLOUD/
+Homework/C# JS Front-End/
